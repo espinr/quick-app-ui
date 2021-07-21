@@ -4,7 +4,7 @@
       <div :class="[`icon icon-${type}`]"></div>
       <p class="entity">{{type}}</p>
     </div>
-    <div class="toast" v-if="toast"><span class="icon-like"></span>复制到剪贴板成功！</div>
+    <div class="toast" v-if="toast"><span class="icon-like"></span>Copying to clipboard succeeded!</div>
   </div>
 </template>
 

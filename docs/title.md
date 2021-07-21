@@ -1,66 +1,66 @@
-## 模块标题 title
+## Heading (`title`)
 
-### 描述
+### Description
 
-用来展示各级标题。
+It is used to display headings at different levels.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/title.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-titlebar" src="qaui/src/components/title/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <div class="qaui-wrap">
   <div class="group">
-    <q-title title="外部标题"></q-title>
-    <q-title title="外部标题" target="/pages/home"></q-title>
+    <q-title title="External Heading"></q-title>
+    <q-title title="External Heading" target="/pages/home"></q-title>
     <q-title
-      title="外部标题"
-      description="描述文字"
+      title="External Heading"
+      description="Description Text"
       target="/pages/home"
     ></q-title>
   </div>
   <div class="group bg-white">
-    <q-title title="内部标题"></q-title>
+    <q-title title="Internal Heading"></q-title>
     <q-title
       icon="/common/logo.png"
-      title="内部标题"
+      title="Internal Heading"
       target="/pages/home"
     ></q-title>
     <q-title
       icon="/common/logo.png"
-      title="内部标题"
-      description="描述文字"
+      title="Internal Heading"
+      description="Description Text"
       target="/pages/home"
     ></q-title>
     <q-title icon="/common/logo.png" target="/pages/home"
-      ><text class="custom">自定义样式</text></q-title
-    >
+      ><text class="custom"></text
+    ></q-title>
   </div>
   <q-container flex-direction="column">
-    <q-title title="标题文字"></q-title>
+    <q-title title="Title Text"></q-title>
     <q-title
       icon="/common/logo.png"
-      title="标题文字"
+      title="Title Text"
       target="/pages/home"
     ></q-title>
     <q-title
       icon="/common/logo.png"
-      title="标题文字"
-      description="描述文字"
+      title="Title Text"
+      description="Description Text"
       target="/pages/home"
     ></q-title>
     <q-title icon="/common/logo.png" target="/pages/home"
-      ><text class="custom">自定义样式</text></q-title
+      ><text class="custom">Custom Styles</text></q-title
     >
   </q-container>
 </div>
@@ -87,17 +87,17 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性        | 类型   | 默认值 | 说明                  |
-| ----------- | ------ | ------ | --------------------- |
-| title       | String | ''     | 标题文本              |
-| icon        | String | ''     | 图标路径,支持网络图片 |
-| description | String | ''     | 描述文本              |
-| target      | String | ''     | 点击跳转路径          |
+| Attribute     | Type   | Value by default | Description                      |
+| ------------- | ------ | ---------------- | -------------------------------- |
+| `title`       | String | `''`             | Title text                       |
+| `icon`        | String | `''`             | URL or relative path of the icon |
+| `description` | String | `''`             | Descriptive text                 |
+| `target`      | String | `''`             | Redirection path                 |
 
 #### slot
 
-| 名称 | 描述       |
-| ---- | ---------- |
-| -    | 自定义标题 |
+| Name | Description  |
+| ---- | ------------ |
+| -    | Custom Title |

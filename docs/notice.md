@@ -1,22 +1,22 @@
-## 通告栏 notice
+## Toast (`notice`)
 
-### 描述
+### Description
 
-适用性广泛的通知栏，可用于通知的静态展示以及动态展示。
+Notification bar within the quick app, which can be used for static and dynamic notifications.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/notice.gif" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-notice" src="qaui/src/components/notice/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -162,22 +162,22 @@ export default {
   data() {
     return {
       noticeTextArr: [
-        '只设置文字属性的效果',
-        '通告栏展示normal效果，通告栏可手动关闭',
-        '通告栏展示warning效果，通告栏可手动关闭',
-        '通告栏展示transparent效果，通告栏可手动关闭',
-        '通告栏可自定义点击跳转事件',
-        '传入图片路径自定义左侧图标效果',
-        '传入图片路径自定义左侧图标效果',
-        '传入图标路径自定义右侧图标效果',
-        '使用icon组件库自定义右侧图标效果',
-        '通告栏展示自定义文字和背景颜色效果',
-        '滚动通告栏展示效果，通告栏可手动关闭，此时为无限循环播放......',
-        '滚动通告栏展示效果，使用icon组件库自定义左侧图标，通告栏可手动关闭，此时为默认播放效果......',
-        '滚动通告栏展示效果，使用icon组件库自定义左侧图标，通告栏可自定义跳转事件，此时为自定义播放速度......',
-        '滚动通告栏展示效果，通告栏可手动关闭，此时为当type为warning的播放效果......',
-        '滚动通告栏展示效果，通告栏可自定义跳转事件，此时为当type为transparent的播放效果......',
-        '滚动通告栏展示效果，通告栏可自定义跳转事件，此时为自定义背景色和文字颜色的播放效果......',
+        'Set text attributes only',
+        'The notification bar displays the normal effect. The notification bar can be manually closed.',
+        'The warning effect is displayed on the notification bar. The notification bar can be manually closed.',
+        'The notification bar displays the transparent effect. The notification bar can be manually closed',
+        'You can customize the click jump event in the notification bar.',
+        'Input the image path to customize the left icon effect',
+        'Input the image path to customize the left icon effect',
+        'Input the icon path to customize the icon effect on the right.',
+        'Use the icon component library to customize the icon effect on the right.',
+        'The notification bar displays customized text and background color.',
+        'The scrolling notice bar displays the effect. The notice bar can be manually closed. In this case, the playback is endlessly looped...',
+        'The display effect of scrolling the notice bar is displayed. Use the icon library to customize the icon on the left. The notice bar can be manually closed. The default playback effect is used.',
+        'Scroll the notice bar display effect. Use the icon library to customize the icon on the left. You can customize the jump event in the notice bar. In this case, you can customize the playback speed.',
+        'The scrolling notice bar displays the effect. The notice bar can be manually closed. In this case, the playback effect is displayed when type is warning.',
+        'The display effect of scrolling the notification bar is displayed. You can customize the jumping event in the notification bar. In this case, the playback effect is displayed when type is set to transparent.',
+        'The display effect of scrolling the notice bar is displayed. You can customize the jumping event in the notice bar. In this case, you can customize the background color and text color.',
       ],
       typeArr: ['normal', 'warning', 'transparent'],
       textColor: '#ffa500',
@@ -228,30 +228,30 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性          | 类型    | 默认值   | 说明                                                                                     |
-| ------------- | ------- | -------- | ---------------------------------------------------------------------------------------- |
-| type          | String  | 'normal' | 通告栏类型，可选值有: 'normal' \| 'warning' \| 'transparent'                             |
-| noticeText    | String  | ''       | 通告栏文字                                                                               |
-| textColor     | String  | ''       | 自定义通告栏文字颜色                                                                     |
-| bgColor       | String  | ''       | 通告栏背景颜色,不建议使用 rgba，建议背景色为文字颜色乘以 0.15 透明度之后的 16 进制颜色值 |
-| leftIcon      | Object  | {}       | 左侧图标对象，具体说明见下方文档                                                         |
-| rightIconType | String  | 'close'  | 通告栏右侧按钮图标，可选值有: 'close' \| 'link'                                          |
-| rightIcon     | Object  | {}       | 右侧图标对象，具体说明见下方文档                                                         |
-| scrollable    | Boolean | false    | 是否滚动播放                                                                             |
-| speed         | Number  | 20       | 滚动速度                                                                                 |
-| scrollTimes   | Number  | 5        | 滚动播放次数,当值为-1 时，则为无限滚动                                                   |
+| Attribute       | Type    | Value by default | Description                                                                                                                                                              |
+| --------------- | ------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `type`          | String  | `'normal'`       | Notification type. The options are: `'normal'` \| `'warning'` \| `'transparent'`                                                                                         |
+| `noticeText`    | String  | `''`             | Notification text                                                                                                                                                        |
+| `textColor`     | String  | `''`             | Text color of the notification bar                                                                                                                                       |
+| `bgColor`       | String  | `''`             | Background color of the notification bar. Instead of using rgba, is recommended using the hexadecimal value obtained by multiplying the text color by 0.15 transparency. |
+| `leftIcon`      | Object  | `{}`             | Icon object on the left. For details, see the table below.                                                                                                               |
+| `rightIconType` | String  | `'close'`        | Button icon on the right of the notification bar. The options are: `'close'` \| `'link'`                                                                                 |
+| `rightIcon`     | Object  | `{}`             | Icon object on the right. For details, see the table below.                                                                                                              |
+| `scrollable`    | Boolean | `false`          | Indicates if scroll is active or not.                                                                                                                                    |
+| `speed`         | Number  | `20`             | Scrolling speed                                                                                                                                                          |
+| `scrollTimes`   | Number  | `5`              | Number of scroll slots. If the value is -1, scrolling is infinite.                                                                                                       |
 
-leftIcon、rightIcon 属性对象的具体说明
+##### leftIcon、rightIcon Attributes
 
-| 属性     | 类型   | 说明                                                             |
-| -------- | ------ | ---------------------------------------------------------------- |
-| iconPath | String | 图标路径，iconPath 和 icon 只需填写一个，如都填写，优先使用 icon |
-| icon     | Object | 组件库中 icon 组件配置项，目前只支持 type 和 color 两个属性      |
+| Attribute  | Type   | Description                                                                                                               |
+| ---------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `iconPath` | String | Icon path. (You only need to set either `iconPath` or `icon`. If both are set, `icon` has higher priority)                |
+| `icon`     | Object | Configuration item of the icon component in the library. Currently, only the `type` and `color` attributes are supported. |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述                              | 返回值 |
-| -------- | ------------------------------------- | ------ |
-| linkTap  | 当 rightIconType 为'link'时，点击触发 | event  |
+| Event name | Event description                                       | Value returned |
+| ---------- | ------------------------------------------------------- | -------------- |
+| `linkTap`  | Click triggered when `rightIconType` is set to `'link'` | `event`        |

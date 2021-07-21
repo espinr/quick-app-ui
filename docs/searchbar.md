@@ -1,28 +1,28 @@
-## 搜索栏 searchBar
+## Search Bar (`searchbar`)
 
-### 描述
+### Description
 
-用于搜索的组件。
+The component used for searching content.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/searchbar"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-searchbar" src="qaui/src/components/searchbar/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
-    <q-searchbar placeholder="搜索一下，你就知道"></q-searchbar>
-    <q-searchbar value="正在搜索" focus="true"></q-searchbar>
+    <q-searchbar placeholder="Search and you'll see..."></q-searchbar>
+    <q-searchbar value="Searching" focus="true"></q-searchbar>
     <q-searchbar left-btn="back"></q-searchbar>
     <q-searchbar left-btn="/common/logo.png"></q-searchbar>
     <q-searchbar right-btn="search"></q-searchbar>
@@ -48,26 +48,26 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性        | 类型    | 默认值 | 说明                                                 |
-| ----------- | ------- | ------ | ---------------------------------------------------- |
-| leftBtn     | String  | ''     | 左边按钮，填入图片路径，当值为'back'则显示返回按钮   |
-| rightBtn    | String  | ''     | 右边按钮，填入图片路径，当值为'search'则显示搜索按钮 |
-| placeholder | String  | '搜索' | 输入提示文本                                         |
-| maxlength   | Number  | 50     | 最大输入长度                                         |
-| focus       | Boolean | false  | 是否自动获得焦点                                     |
-| value       | String  | ''     | 显示默认值                                           |
-| menubar     | Boolean | false  | 是否适配 menubar 样式                                |
+| Attribute     | Type    | Value by default | Description                                                                                                    |
+| ------------- | ------- | ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| `leftBtn`     | String  | `''`             | Button on the left. Includes the path of the image. When the value is `back`, the back button is displayed.    |
+| `rightBtn`    | String  | `''`             | Button on the right. Includes the path of the image. If the value is `search`, the search button is displayed. |
+| `placeholder` | String  | `'Search'`       | The placeholder text                                                                                           |
+| `maxlength`   | Number  | `50`             | Maximum input length                                                                                           |
+| `focus`       | Boolean | `false`          | Indicates whether to automatically get the focus                                                               |
+| `value`       | String  | `''`             | Default value                                                                                                  |
+| `menubar`     | Boolean | `false`          | Indicates whether to adapt to the style of `menubar`                                                           |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称      | 事件描述             | 返回值           |
-| ------------- | -------------------- | ---------------- |
-| blur          | 失去焦点事件         | { event: evt }   |
-| focus         | 获得焦点事件         | { event: evt }   |
-| clear         | 清除输入值事件       | { value: value } |
-| change        | 输入值变化事件       | { event: evt }   |
-| enterkeyclick | 键盘搜索按钮点击事件 | { event: evt }   |
-| left          | 左边按钮点击事件     | { value: value } |
-| right         | 右边按钮点击事件     | { value: value } |
+| Event name      | Event description        | Value returned     |
+| --------------- | ------------------------ | ------------------ |
+| `blur`          | Lost focus               | `{ event: evt }`   |
+| `focus`         | Get focus                | `{ event: evt }`   |
+| `clear`         | Clear input value        | `{ value: value }` |
+| `change`        | Change value of input    | `{ event: evt }`   |
+| `enterkeyclick` | Keyboard enter key click | `{ event: evt }`   |
+| `left`          | Left button click event  | `{ value: value }` |
+| `right`         | Right button click event | `{ value: value }` |

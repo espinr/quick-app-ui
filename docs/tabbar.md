@@ -1,22 +1,22 @@
-## 导航栏 tabbar
+## Navigation Bar (`tabbar`)
 
-### 描述
+### Description
 
-底部 Tab 切换
+Tab switch at the bottom of the screen.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/tabbar"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-tabbar" src="qaui/src/components/tabbar/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -33,7 +33,7 @@
       <block for="{{ tabbarData }}">
         <div class="item-container">
           <div class="item-content">
-            <text>标签{{ $idx + 1 }}内容</text>
+            <text>Tab#{{ $idx + 1 }} content</text>
           </div>
         </div>
       </block>
@@ -68,19 +68,19 @@ export default {
           icon: 'homepage',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '首页首页'
+          text: 'Home'
         },
         {
           icon: 'qrcode',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '产品列表'
+          text: 'Products'
         },
         {
           icon: 'contact-fill',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '我的',
+          text: 'Contact',
 
         },
       ],
@@ -100,28 +100,28 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性        | 类型   | 默认值    | 说明                                |
-| ----------- | ------ | --------- | ----------------------------------- |
-| index       | Number | '0'       | 当前激活项索引                      |
-| background  | String | '#fff'    | 当前背景环境                        |
-| textColor   | String | '#B2B2B2' | 未激活状态下文字颜色                |
-| activeColor | String | '#456FFF' | 激活状态下文字颜色                  |
-| iconSize    | Number | 22        | 如果设置了 icon，需传递 icon 的大小 |
-| data        | Array  | [ ]       | tab 数据对象数组                    |
+| Attribute     | Type   | Value by default | Description                                             |
+| ------------- | ------ | ---------------- | ------------------------------------------------------- |
+| `index`       | Number | `0`              | Index of the current active item                        |
+| `background`  | String | `'#fff'`         | Background color                                        |
+| `textColor`   | String | `'#B2B2B2'`      | Text color for the inactive tabs                        |
+| `activeColor` | String | `'#456FFF'`      | Text color for the active tab                           |
+| `iconSize`    | Number | `22`             | If an `icon` is set, this attribute specifies its size. |
+| `data`        | Array  | `[ ]`            | Tab data object array (see below)                       |
 
-data 内对象的属性说明
+##### `data` Object Attributes
 
-| 属性             | 类型   | 默认值 | 说明                                         |
-| :--------------- | :----- | :----- | :------------------------------------------- |
-| icon             | String | -      | 图标类型，与图标路径互斥，优先级更高，非必填 |
-| iconPath         | String | -      | 非激活状态下的图标路径，非必填               |
-| selectedIconPath | String | -      | 激活状态下的图标路径，非必填                 |
-| text             | String | -      | 标签文本，必填                               |
+| Attribute          | Type   | Value by default | Description                                                                                           |
+| :----------------- | :----- | :--------------- | :---------------------------------------------------------------------------------------------------- |
+| `icon`             | String | -                | Icon type, which is mutually exclusive with `iconPath`. `icon` has a higher priority and is optional. |
+| `iconPath`         | String | -                | Indicates the path of the icon in the inactive state. This parameter is optional.                     |
+| `selectedIconPath` | String | -                | Path of the icon in the activated state (optional).                                                   |
+| `text`             | String | -                | Label (mandatory).                                                                                    |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述 | 返回值                              |
-| -------- | -------- | ----------------------------------- |
-| tap      | 切换页面 | {detail：{index: 当前点击项的索引}} |
+| Event name | Event description  | Value returned                                  |
+| ---------- | ------------------ | ----------------------------------------------- |
+| `tap`      | Switching the page | `{detail：{index: Index of the current click}}` |

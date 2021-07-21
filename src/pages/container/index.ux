@@ -2,12 +2,12 @@
 <template>
   <div class="qaui-wrap">
     <q-container>
-      <text class="content">内容</text>
+      <text class="content">Content</text>
     </q-container>
     <q-container>
       <div class="two">
-        <text>内容</text>
-        <text>内容</text>
+        <text>Content</text>
+        <text>Content</text>
       </div>
     </q-container>
     <q-container flex-direction="column">
@@ -16,17 +16,17 @@
         <text>内部标题</text>
       </div>
       <div class="three">
-        <text>内容</text>
-        <text>内容</text>
-        <text>内容</text>
+        <text>Content</text>
+        <text>Content</text>
+        <text>Content</text>
       </div>
-      <text class="footer">底部展示区</text>
+      <text class="footer">Bottom display area</text>
     </q-container>
     <q-container>
       <swiper class="swiper" autoplay="true">
-        <text>内容1</text>
-        <text>内容2</text>
-        <text>内容3</text>
+        <text>Content1</text>
+        <text>Content2</text>
+        <text>Content3</text>
       </swiper>
     </q-container>
   </div>

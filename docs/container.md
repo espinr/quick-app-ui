@@ -1,48 +1,48 @@
-## 容器 container
+## Container (`container`)
 
-### 描述
+### Description
 
-用来放置各类组件的基础布局组件。
+The basic layout component used to contain several components.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/container"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-container" src="qaui/src/components/container/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
     <q-container>
-      <text class="content">内容</text>
+      <text class="content">Content</text>
     </q-container>
     <q-container>
       <div class="two">
-        <text>内容</text>
-        <text>内容</text>
+        <text>Content</text>
+        <text>Content</text>
       </div>
     </q-container>
     <q-container flex-direction="column">
       <div class="three">
-        <text>内容</text>
-        <text>内容</text>
-        <text>内容</text>
+        <text>Content</text>
+        <text>Content</text>
+        <text>Content</text>
       </div>
-      <text class="footer">底部展示区</text>
+      <text class="footer">Bottom display area</text>
     </q-container>
     <q-container>
       <swiper class="swiper" autoplay="true">
-        <text>内容1</text>
-        <text>内容2</text>
-        <text>内容3</text>
+        <text>Content1</text>
+        <text>Content2</text>
+        <text>Content3</text>
       </swiper>
     </q-container>
   </div>
@@ -103,9 +103,9 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性          | 类型   | 默认值    | 说明                               |
-| ------------- | ------ | --------- | ---------------------------------- |
-| bgColor       | String | '#FFFFFF' | 组件背景颜色                       |
-| flexDirection | String | 'row'     | 内容排列方式，可选 'row'，'column' |
+| Attribute       | Type   | Value by default | Description                                           |
+| --------------- | ------ | ---------------- | ----------------------------------------------------- |
+| `bgColor`       | String | `'#FFFFFF'`      | Component background color                            |
+| `flexDirection` | String | `'row'`          | Optional component direction mode `'row'`，`'column'` |

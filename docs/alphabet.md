@@ -1,22 +1,22 @@
-## 字母检索表 alphabet
+## Alphabet Index (`alphabet`)
 
-### 描述
+### Description
 
-字母索引器
+Alphabet index.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/alphabet"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-alphabet" src="qaui/src/components/alphabet/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -52,161 +52,140 @@ export default {
         {
           index: 'A',
           child: [
-            { id: '111213', text: '澳门' },
-            { id: '111214', text: '安庆' },
-            { id: '111215', text: '鞍山' },
+            { id: '111213', text: 'Acapulco' },
+            { id: '111214', text: 'Accra' },
+            { id: '111215', text: 'Adak' },
           ],
         },
         {
           index: 'B',
           child: [
-            { id: '111216', text: '北海' },
-            { id: '111217', text: '北京' },
+            { id: '111216', text: 'Barcelona' },
+            { id: '111217', text: 'Beirut' },
           ],
         },
         {
           index: 'C',
           child: [
-            { id: '111218', text: '长春' },
-            { id: '111218', text: '长沙' },
-            { id: '111218', text: '重庆' },
+            { id: '111218', text: 'Caversham' },
+            { id: '111219', text: 'Charleston长沙' },
+            { id: '111220', text: 'Chicago' },
           ],
         },
-        { index: 'D', child: [{ id: '111218', text: '大理' }] },
+        { index: 'D', child: [{ id: '111218', text: 'Dublin' }] },
         {
           index: 'E',
           child: [
-            { id: '111218', text: '鄂尔多斯' },
-            { id: '111218', text: '恩施' },
+            { id: '111221', text: 'Edimburgh' },
+            { id: '111222', text: 'Edmonton' },
           ],
         },
         {
           index: 'F',
           child: [
-            { id: '111218', text: '阜阳' },
-            { id: '111218', text: '福州' },
-            { id: '111218', text: '佛山' },
+            { id: '111223', text: 'Fortaleza' },
+            { id: '111224', text: 'Frankfurt' },
+            { id: '111225', text: 'Freetown' },
           ],
         },
         {
           index: 'G',
           child: [
-            { id: '111218', text: '广州' },
-            { id: '111218', text: '贵阳' },
-            { id: '111218', text: '桂林' },
+            { id: '111226', text: 'Geneva' },
+            { id: '111227', text: 'Guatemala' },
+            { id: '111228', text: 'Glasgow' },
           ],
         },
         {
           index: 'H',
           child: [
-            { id: '111218', text: '哈尔滨' },
-            { id: '111218', text: '海口' },
+            { id: '111229', text: 'Hanoi' },
+            { id: '111230', text: 'Havana' },
           ],
         },
         {
           index: 'J',
           child: [
-            { id: '111218', text: '济南' },
-            { id: '111218', text: '井冈山' },
-            { id: '111218', text: '九寨沟' },
+            { id: '111231', text: 'Jakarta' },
+            { id: '111232', text: 'Juba' },
+            { id: '111233', text: 'Juneau' },
           ],
         },
         {
           index: 'K',
           child: [
-            { id: '111218', text: '康定' },
-            { id: '111218', text: '昆明' },
+            { id: '111234', text: 'Karachi' },
+            { id: '111235', text: 'Kobe' },
           ],
         },
         {
           index: 'L',
           child: [
-            { id: '111218', text: '拉萨' },
-            { id: '111218', text: '丽江' },
+            { id: '111236', text: 'Lagos' },
+            { id: '111237', text: 'Lahore' },
           ],
         },
-        { index: 'M', child: [{ id: '111218', text: '牡丹江' }] },
+        { index: 'M', child: [{ id: '111238', text: 'Maputo' }] },
         {
           index: 'N',
           child: [
-            { id: '111218', text: '南昌' },
-            { id: '111218', text: '南京' },
-            { id: '111218', text: '宁波' },
+            { id: '111239', text: 'Nassau' },
+            { id: '111240', text: 'New York' },
+            { id: '111241', text: 'Nuuk' },
           ],
         },
-        { index: 'P', child: [{ id: '111218', text: '澎湖列岛' }] },
+        {
+          index: 'O',
+          child: [
+            { id: '111242', text: 'Osaka' },
+            { id: '111243', text: 'Oslo' },
+            { id: '111244', text: 'Ottawa' },
+          ],
+        },
+        { index: 'P', child: [{ id: '111245', text: 'Perth' }] },
         {
           index: 'Q',
           child: [
-            { id: '111218', text: '青岛' },
-            { id: '111218', text: '泉州' },
+            { id: '111246', text: 'Quebek' },
+            { id: '111247', text: 'Quito' },
           ],
         },
         {
           index: 'S',
           child: [
-            { id: '111218', text: '三亚' },
-            { id: '111218', text: '上海' },
-            { id: '111218', text: '深圳' },
+            { id: '111248', text: 'Sacramento' },
+            { id: '111249', text: 'Seville' },
+            { id: '111250', text: 'Sofia' },
           ],
         },
         {
           index: 'T',
           child: [
-            { id: '111218', text: '台州' },
-            { id: '111218', text: '唐山' },
+            { id: '111251', text: 'Toronto' },
+            { id: '111252', text: 'Tripoli' },
           ],
         },
         {
           index: 'W',
           child: [
-            { id: '111218', text: '武汉' },
-            { id: '111218', text: '武夷山' },
-            { id: '111218', text: '无锡' },
-          ],
-        },
-        {
-          index: 'X',
-          child: [
-            { id: '111218', text: '西安' },
-            { id: '111218', text: '厦门' },
-            { id: '111218', text: '香港' },
-            { id: '111218', text: '香港' },
-            { id: '111218', text: '香港' },
-            { id: '111218', text: '香港' },
-            { id: '111218', text: '香港' },
-            { id: '111218', text: '香港' },
-            { id: '111218', text: '香港' },
-            { id: '111218', text: '香港' },
+            { id: '111253', text: 'Warsaw' },
+            { id: '111254', text: 'Wellington' },
+            { id: '111255', text: 'Whitehorse' },
           ],
         },
         {
           index: 'Y',
           child: [
-            { id: '111218', text: '伊春' },
-            { id: '111218', text: '扬州' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
-            { id: '111218', text: '岳阳' },
+            { id: '111256', text: 'Yangon' },
+            { id: '111257', text: 'Yaren' },
+            { id: '111258', text: 'Yokohama' },
           ],
         },
         {
           index: 'Z',
           child: [
-            { id: '111218', text: '湛江' },
-            { id: '111218', text: '湛江' },
-            { id: '111218', text: '湛江' },
-            { id: '111218', text: '湛江' },
-            { id: '111218', text: '湛江' },
-            { id: '111218', text: '张家界' },
-            { id: '111218', text: '张家界' },
-            { id: '111218', text: '张家界' },
+            { id: '111261', text: 'Zagreb' },
+            { id: '111262', text: 'Zurich' },
           ],
         },
       ],
@@ -222,26 +201,26 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性             | 类型    | 默认值    | 说明                                         |
-| ---------------- | ------- | --------- | -------------------------------------------- |
-| id               | String  | ''        | 组件的 id，必须                              |
-| activeColor      | String  | '#fff'    | 激活状态下字母的颜色                         |
-| activeBackground | String  | '#2878ff' | 激活状态下字母的背景颜色                     |
-| isShake          | Boolean | true      | 是否开启震动，点击字母时，调用原生的震动效果 |
-| data             | Array   | [ ]       | data 数据对象数组，对象数据结构见下表        |
+| Attribute          | Type    | Value by default | Description                                                                                                |
+| ------------------ | ------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
+| `id`               | String  | `''`             | ID of the component (mandatory)                                                                            |
+| `activeColor`      | String  | `'#fff'`         | Color of the letter that is in the active state                                                            |
+| `activeBackground` | String  | `'#2878ff'`      | Background color of the letter in the active state                                                         |
+| `isShake`          | Boolean | `true`           | Indicates whether to enable vibration. When a letter is clicked, the native vibration effect is activated. |
+| `data`             | Array   | `[ ]`            | Data object array. The following table describes the structure of the object.                              |
 
-data 内对象的属性说明
+Description of the `data` object attributes:
 
-| 属性  | 类型   | 默认值 | 说明                                                                   |
-| :---- | :----- | :----- | :--------------------------------------------------------------------- |
-| index | String | ''     | 字母，必填                                                             |
-| child | []     | ''     | 对应字母索引的二级列表，如`child: [{ id: '111218', text: '北京' }]`    |
-| text  | String | ''     | 二级列表中的正文内容，必填，child 中除 text 字段外，其余字段皆可自定义 |
+| Attribute | Type   | Value by default | Description                                                                                                           |
+| :-------- | :----- | :--------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| `index`   | String | `''`             | Letter (mandatory)                                                                                                    |
+| `child`   | `[]`   | `''`             | Level-2 list corresponding to the alphabetic index, for example, `child: [{ id: '111218', text: 'Edmonton' }]`        |
+| `text`    | String | `''`             | Content of the body in the level-2 list (mandatory). All fields except the text field in the child can be customized. |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述                             | 返回值                                                  |
-| -------- | ------------------------------------ | ------------------------------------------------------- |
-| itemtap  | 点击事件，点击索引表关联的正文时触发 | evt：回调对象，通过`evt.detail`可以获取到回传过来的对象 |
+| Event name | Event description                                                                                | Value returned                                                                    |
+| ---------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| `itemtap`  | Event clicked. This event is triggered when the body associated with the index table is clicked. | `evt: callback object`. The returned object can be obtained through `evt.detail`. |

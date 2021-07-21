@@ -1,30 +1,30 @@
-## 画廊 gallery
+## Gallery (`gallery`)
 
-### 描述
+### Description
 
-用于展示图片并可以点击预览
+Displays pictures as a gallery, enabling the preview of the images.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/gallery.gif" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在.ux 文件中引入组件
+Importing the components in `.ux` files:
 
 ```html
 <import name="q-gallery" src="qaui/src/components/gallery/index"></import>
 ```
 
-### 实例
+### Example
 
 ```html
 <template>
   <div style="flex-direction: column">
-    <q-gallery title="标题文字" srcs="{{ data1 }}"></q-gallery>
-    <q-gallery title="标题文字" srcs="{{ data2 }}"></q-gallery>
+    <q-gallery title="Title Text" srcs="{{ data1 }}"></q-gallery>
+    <q-gallery title="Title Text" srcs="{{ data2 }}"></q-gallery>
     <q-gallery
-      title="标题文字"
+      title="Title Text"
       srcs="{{ data3 }}"
       onimage-preview-success="onImagePreviewSuccess"
     ></q-gallery>
@@ -89,11 +89,11 @@ export default {
     })
   },
   onImagePreviewSuccess() {
-    console.log('图片预览成功')
+    console.log('Picture previewed successfully')
   },
   videoAppear() {
     prompt.showToast({
-      message: '视频出现了',
+      message: 'Video shown',
     })
   },
 }
@@ -101,21 +101,21 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性             | 类型   | 默认值      | 说明                                                                                       |
-| ---------------- | ------ | ----------- | ------------------------------------------------------------------------------------------ |
-| srcs             | Array  | []          | 图片链接地址，支持网络地址、本地资源地址或 base64 图片，注意 base64 图片不支持大图预览功能 |
-| title            | String | ''          | 画廊描述文字                                                                               |
-| videoUrl         | String | ''          | 视频链接地址（网络地址或者本地路径）                                                       |
-| posterUrl        | String | ''          | 视频预览海报                                                                               |
-| videoOrientation | String | 'landscape' | 视频展示的和全屏播放的方向：'landscape' 横屏，'portrait' 竖屏                              |
+| Attribute          | Type   | Value by default | Description                                                                                                                                |
+| ------------------ | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `srcs`             | Array  | `[]`             | Image link address. The value can be a URL, local resource, or a base64 image. Note that base64 images do not support large image preview. |
+| `title`            | String | `''`             | Gallery description text                                                                                                                   |
+| `videoUrl`         | String | `''`             | Video link address (URL or local path)                                                                                                     |
+| `posterUrl`        | String | `''`             | Video preview poster                                                                                                                       |
+| `videoOrientation` | String | `landscape`      | Direction of video and full-screen display: `landscape` and `portrait`                                                                     |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称            | 事件描述           | 返回值 |
-| ------------------- | ------------------ | ------ |
-| imagePreviewSuccess | 点击图片成功时触发 | event  |
-| imagePreviewFail    | 点击图片失败时触发 | event  |
-| videoTap            | 点击视频时触发     | event  |
-| videoAppear         | 视频出现时触发     | event  |
+| Event name            | Event description                            | Value returned |
+| --------------------- | -------------------------------------------- | -------------- |
+| `imagePreviewSuccess` | Triggered when an image is clicked.          | `event`        |
+| `imagePreviewFail`    | Triggered when an image fails to be clicked. | `event`        |
+| `videoTap`            | Triggered when a video is clicked.           | `event`        |
+| `videoAppear`         | Triggered when a video is shown.             | `event`        |

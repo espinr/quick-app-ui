@@ -2,12 +2,12 @@
 
 <template>
   <div style="flex-direction: column">
-    <q-gallery title="标题文字" srcs="{{ data1 }}"></q-gallery>
-    <q-gallery title="标题文字" srcs="{{ data2 }}"></q-gallery>
-    <q-gallery title="标题文字" srcs="{{ data3 }}"></q-gallery>
-    <q-gallery title="标题文字" srcs="{{ data4 }}"></q-gallery>
+    <q-gallery title="Title Text" srcs="{{ data1 }}"></q-gallery>
+    <q-gallery title="Title Text" srcs="{{ data2 }}"></q-gallery>
+    <q-gallery title="Title Text" srcs="{{ data3 }}"></q-gallery>
+    <q-gallery title="Title Text" srcs="{{ data4 }}"></q-gallery>
     <q-gallery
-      title="标题文字"
+      title="Title Text"
       srcs="{{ data5 }}"
       onimage-preview-success="onImagePreviewSuccess"
     ></q-gallery>

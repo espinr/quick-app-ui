@@ -1,29 +1,29 @@
-## 添桌浮层 desktop
+## Bookmark Dialog (`desktop`)
 
-### 描述
+### Description
 
-添加到桌面。
+Dialog to add a bookmark on the home screen (desktop).
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/desktop"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-desktop" src="qaui/src/components/desktop/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
     <q-desktop
       description="{{ description }}"
-      btn-text="添加"
+      btn-text="Add"
       icon="qrcode-fill"
       icon-src="{{ iconSrc }}"
       onclose="handClose"
@@ -43,7 +43,7 @@ export default {
   props: {},
   data() {
     return {
-      description: '添加到桌面，描述文字描述',
+      description: 'Add to Homescreen，Description Text',
       background: '#fff',
       activeColor: '#456FFF',
       textColor: '#B2B2B2',
@@ -51,11 +51,11 @@ export default {
     }
   },
   handClose() {
-    console.log('关闭浮层回调')
+    console.log('Turn off overlayed message')
   },
   handSuccess() {
     prompt.showToast({
-      message: '成功创建桌面图标',
+      message: 'Homescreen icon successfully created',
     })
   },
   handFail(evt) {
@@ -63,7 +63,7 @@ export default {
   },
   handCreated() {
     prompt.showToast({
-      message: '已创建桌面图标',
+      message: 'Homescreen icon created',
     })
   },
 }
@@ -80,20 +80,20 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性        | 类型   | 默认值   | 说明                                       |
-| :---------- | :----- | :------- | :----------------------------------------- |
-| icon        | String | 'qrcode' | icon 名称                                  |
-| iconSrc     | String | ''       | icon 图片地址,与 icon 名称互斥，优先级更高 |
-| description | String | ''       | 文字描述，必填                             |
-| btnText     | String | '添加'   | 按钮文字，必填                             |
+| Attribute     | Type   | Value by default | Description                                                                               |
+| :------------ | :----- | :--------------- | :---------------------------------------------------------------------------------------- |
+| `icon`        | String | `'qrcode'`       | Icon name                                                                                 |
+| `iconSrc`     | String | `''`             | Icon image source, which is mutually exclusive with the `icon` and has a higher priority. |
+| `description` | String | `''`             | Text description (mandatory).                                                             |
+| `btnText`     | String | `'Add'`          | Button text (mandatory).                                                                  |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述               | 返回值                                 |
-| -------- | ---------------------- | -------------------------------------- |
-| created  | 已创建桌面的回调       | -                                      |
-| success  | 添加桌面成功之后的回调 | -                                      |
-| fail     | 添加桌面失败之后的回调 | evt 对象（添桌失败的返回状态码和描述） |
-| close    | 关闭添桌浮层           | -                                      |
+| Event name | Event description                                       | Value returned                                              |
+| ---------- | ------------------------------------------------------- | ----------------------------------------------------------- |
+| `created`  | Callback for desktop bookmark created                   | -                                                           |
+| `success`  | Callback after a desktop bookmark is successfully added | -                                                           |
+| `fail`     | Callback after a desktop bookmark fails to be added     | `evt Object (returned status code and failure description)` |
+| `close`    | Callback after the dialog is closed.                    | -                                                           |

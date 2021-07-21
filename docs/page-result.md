@@ -1,16 +1,16 @@
-## 结果页 page-result
+## Results Page (`page-result`)
 
-### 描述
+### Description
 
-用于展示一系列操作任务的处理结果页面。
+Displays the results of specific running tasks.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/page-result.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import
@@ -19,7 +19,7 @@
 ></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -33,9 +33,12 @@
       onleft-btn-tap="leftBtn"
       onright-btn-tap="rightBtn"
     >
-      <span>内容详情可换行，不超过两行内容，也可以通过插入</span>
-      <a class="text-link" href="/pages/button">文字链接</a>
-      <span>使其更具有功能性的提示。</span>
+      <span
+        >Content details can be wrapped in a maximum of two lines. You can also
+        insert the content into a new line</span
+      >
+      <a class="text-link" href="/pages/button">Linked Text</a>
+      <span>Tips to make it more functional.</span>
     </q-page-result>
   </div>
 </template>
@@ -47,12 +50,12 @@ export default {
   data() {
     return {
       typeArr: ['success', 'warning', 'error', 'waiting'],
-      title: '主标题',
+      title: 'Main Title',
       description:
-        '内容详情可换行，不超过两行内容。也可以通过插入文字链接更具有功能性的提示',
-      leftBtnName: '副按钮',
-      rightBtnName: '主按钮',
-      footerInfo: '底部自定义信息',
+        'The content details can be wrapped in a maximum of two lines. You can also insert text links for more functional hints',
+      leftBtnName: 'Secondary Button',
+      rightBtnName: 'Home Button',
+      footerInfo: 'Bottom Custom Info',
     }
   },
   leftBtn(data) {
@@ -83,26 +86,26 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性         | 类型   | 默认值    | 说明                                                                      |
-| ------------ | ------ | --------- | ------------------------------------------------------------------------- |
-| type         | String | 'success' | 结果的状态类型，可选值有: 'success' \| 'warning' \| 'error' \| 'waiting'  |
-| title        | String | ''        | 主标题                                                                    |
-| leftBtnName  | String | ''        | 左侧按钮名称                                                              |
-| rightBtnName | String | ''        | 右侧按钮名称                                                              |
-| description  | String | ''        | 描述性文字，如果想要添加链接，可使用 slot 传入，如两者都传，优先使用 slot |
-| footerInfo   | String | ''        | 底部自定义信息                                                            |
+| Attribute      | Type   | Value by default | Description                                                                                                      |
+| -------------- | ------ | ---------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `type`         | String | `'success'`      | Result status type. The options are: `'success'` \| `'warning'` \| `'error'` \| `'waiting'`                      |
+| `title`        | String | `''`             | Main title                                                                                                       |
+| `leftBtnName`  | String | `''`             | Label of the button on the left                                                                                  |
+| `rightBtnName` | String | `''`             | Label of the button on the right                                                                                 |
+| `description`  | String | `''`             | Descriptive text. If you want to add a link, you can use `slot` to transfer it. If both are set, `slot` is used. |
+| `footerInfo`   | String | `''`             | Custom information at the bottom                                                                                 |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称    | 事件描述         | 返回值 |
-| ----------- | ---------------- | ------ |
-| leftBtnTap  | 点击左侧按钮触发 | event  |
-| rightBtnTap | 点击右侧按钮触发 | event  |
+| Event name    | Event description    | Value returned |
+| ------------- | -------------------- | -------------- |
+| `leftBtnTap`  | Left button clicked  | `event`        |
+| `rightBtnTap` | Right button clicked | `event`        |
 
 #### slot
 
-| 名称 | 描述                                   |
-| ---- | -------------------------------------- |
-| -    | 自定义内容描述文字，可自行添加文字链接 |
+| Name | Description                                              |
+| ---- | -------------------------------------------------------- |
+| -    | Customize the descriptive text. You can add a text link. |

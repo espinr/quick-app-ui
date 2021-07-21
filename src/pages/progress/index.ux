@@ -1,7 +1,7 @@
 <import name="q-progress" src="../../components/progress/index"></import>
 <template>
   <div class="wrap">
-    <text class="title">progress进度条</text>
+    <text class="title">Progress Bar</text>
     <div class="progress-group">
       <div class="progress-box">
         <q-progress></q-progress>
@@ -16,7 +16,7 @@
         ></q-progress>
       </div>
     </div>
-    <text class="title">自定义进度条</text>
+    <text class="title">Customizing the progress bar</text>
     <div class="progress-group">
       <div class="progress-box">
         <q-progress
@@ -51,7 +51,7 @@ export default {
       progressWidth: '360px',
       strokeColor: '#1E90FF',
       trailColor: 'rgba(255,215,0,.5)',
-      format: (percentage) => '已下载' + percentage + '%',
+      format: (percentage) => 'Downloaded ' + percentage + '%',
     }
   },
 }

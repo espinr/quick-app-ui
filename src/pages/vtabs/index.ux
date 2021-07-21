@@ -22,7 +22,7 @@
             <block for="{{ data }}">
               <div class="item-container">
                 <div class="item-content">
-                  <text>标签{{ $idx + 1 }}内容</text>
+                  <text>Tab#{{ $idx + 1 }} Content</text>
                 </div>
               </div>
             </block>
@@ -40,7 +40,7 @@
             <block for="{{ data }}">
               <div class="item-container">
                 <div class="item-content">
-                  <text>标签{{ $idx + 1 }}内容</text>
+                  <text>Tab#{{ $idx + 1 }} Content</text>
                 </div>
               </div>
             </block>
@@ -58,7 +58,7 @@
             <block for="{{ data }}">
               <div class="item-container">
                 <div class="item-content">
-                  <text>标签{{ $idx + 1 }}内容</text>
+                  <text>Tab#{{ $idx + 1 }} Content</text>
                 </div>
               </div>
             </block>
@@ -79,18 +79,18 @@ export default {
   data() {
     return {
       data: [
-        { label: '标签文字', icon: 'qrcode-fill' },
-        { label: '标签文字', icon: 'send' },
-        { label: '标签文字', icon: 'call-forwarding' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'qrcode-fill' },
+        { label: 'Label Text', icon: 'send' },
+        { label: 'Label Text', icon: 'call-forwarding' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
       ],
       tabbarData: [
         {
@@ -103,13 +103,13 @@ export default {
           icon: 'qrcode',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '胶囊标签',
+          text: 'Products',
         },
         {
           icon: 'contact-fill',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '描述标签',
+          text: 'Contact',
         },
       ],
       iconSize: 22,

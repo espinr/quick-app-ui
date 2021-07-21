@@ -1,13 +1,13 @@
 <import name="q-textarea" src="../../components/textarea/index"></import>
 <template>
   <div class="qaui-wrap">
-    <text class="title">默认用法</text>
+    <text class="title">Usage by Default</text>
     <q-textarea></q-textarea>
-    <text class="title">自定义用法</text>
+    <text class="title">Customized Usage</text>
     <q-textarea
-      placeholder="请输入您的意见！"
+      placeholder="Please enter your comments!"
       maxlength="50"
-      default-value="快应用真快"
+      default-value="Quick App is quick"
       focus="true"
       onchange="changeHandler"
     ></q-textarea>

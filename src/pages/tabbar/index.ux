@@ -13,7 +13,7 @@
       <block for="{{ tabbarData }}">
         <div class="item-container">
           <div class="item-content">
-            <text>标签{{ $idx + 1 }}内容</text>
+            <text>Tab#{{ $idx + 1 }} Content</text>
           </div>
         </div>
       </block>
@@ -43,19 +43,19 @@ export default {
           icon: 'homepage',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '首页首页',
+          text: 'Home',
         },
         {
           icon: 'qrcode',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '产品列表',
+          text: 'Products',
         },
         {
           icon: 'contact-fill',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '我的',
+          text: 'Contact',
         },
       ],
       index: 0,

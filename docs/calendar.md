@@ -1,30 +1,30 @@
-## 日历 calendar
+## Calendar (`calendar`)
 
-### 描述
+### Description
 
-用于查看和选择日期。
+Component to view and select dates.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;">
     <img src="./assets/calendar-a.jpg" alt="barcode" style="width:300px" />
     <img src="./assets/calendar-b.jpg" alt="barcode" style="width:300px" />
 </div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-calendar" src="qaui/src/components/calendar/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
-    <q-button ontap="changeType">切换日历显示模式</q-button>
+    <q-button ontap="changeType">Toggle Calendar Display Mode</q-button>
     <q-calendar
       if="type==='default'"
       type="default"
@@ -47,13 +47,13 @@ export default {
       desc: [
         {
           date: '2020-10-15',
-          top: '描述文字',
-          bottom: '描述文字',
+          top: 'Description Text',
+          bottom: 'Description Text',
         },
         {
           date: '2020-10-21',
-          top: '描述文字',
-          bottom: '描述文字',
+          top: 'Description Text',
+          bottom: 'Description Text',
         },
       ],
     }
@@ -74,19 +74,19 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性        | 类型   | 默认值                | 说明                                |
-| ----------- | ------ | --------------------- | ----------------------------------- |
-| type        | String | 'default'             | 日历显示类型，可选值有 default,list |
-| range       | Array  | ['2020-10','2021-10'] | 日历显示范围                        |
-| description | Array  | []                    | 日期上显示相关描述文字              |
-| desc.date   | String | ''                    | 要显示文字的日期，示例'2020-12-10'  |
-| desc.top    | String | ''                    | 日期上面要显示的文字                |
-| desc.bottom | String | ''                    | 日期下面要显示的文字                |
+| Attribute     | Type   | Value by default        | Description                                                  |
+| ------------- | ------ | ----------------------- | ------------------------------------------------------------ |
+| `type`        | String | `'default'`             | Calendar display type. The options are: `default` and `list` |
+| `range`       | Array  | `['2020-10','2021-10']` | Calendar display dates range                                 |
+| `description` | Array  | `[]`                    | The relevant descriptive text displayed on the date.         |
+| `desc.date`   | String | `''`                    | Date to display text, example `'2020-12-10'`                 |
+| `desc.top`    | String | `''`                    | Text to be displayed above the date                          |
+| `desc.bottom` | String | `''`                    | Text to be displayed below the date                          |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述 | 返回值             |
-| -------- | -------- | ------------------ |
-| tap      | 日期点击 | 当前点击日期的数据 |
+| Event name | Event description | Value returned           |
+| ---------- | ----------------- | ------------------------ |
+| `tap`      | Date click        | Data of the date clicked |

@@ -1,30 +1,30 @@
-## 分隔符 divider
+## Separator (`divider`)
 
-### 描述
+### Description
 
-用于分隔不同模块及展示加载提示。
+Component used to separate different components and dialogs.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/divider"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-divider" src="qaui/src/components/divider/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
-    <q-divider loading="{{true}}" content="正在加载"></q-divider>
-    <q-divider content="暂无数据"></q-divider>
-    <q-divider content="自定义没有更多的内容"></q-divider>
-    <q-divider><text class="custom">自定义样式内容</text></q-divider>
+    <q-divider loading="{{true}}" content="Loading"></q-divider>
+    <q-divider content="No data available"></q-divider>
+    <q-divider content="No more data"></q-divider>
+    <q-divider><text class="custom">Custom Style Content</text></q-divider>
   </div>
 </template>
 ```
@@ -43,15 +43,15 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性    | 类型    | 默认值 | 说明               |
-| ------- | ------- | ------ | ------------------ |
-| loading | Boolean | false  | 是否显示加载中样式 |
-| content | String  | ''     | 分隔提示文本       |
+| Attribute | Type    | Value by default | Description                      |
+| --------- | ------- | ---------------- | -------------------------------- |
+| `loading` | Boolean | `false`          | Display the loading status style |
+| `content` | String  | `''`             | Separating text                  |
 
 #### slot
 
-| 名称 | 描述               |
-| ---- | ------------------ |
-| -    | 自定义分隔提示内容 |
+| Name | Description    |
+| ---- | -------------- |
+| -    | Custom content |

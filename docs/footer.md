@@ -1,39 +1,39 @@
-## 页脚 footer
+## Footer (`footer`)
 
-### 描述
+### Description
 
-用于展示页脚信息。
+Displays footer information.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/footer"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-footer" src="qaui/src/components/footer/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
     <q-footer
-      content="这是一行版本号版本号信息，内容自定义"
+      content="This is a line with versioning information. The content is customized."
       logo="/common/logo.png"
     ></q-footer>
     <q-footer
       links="{{links}}"
-      content="这是一行版本号版本号信息，内容自定义"
+      content="This is a line with versioning information. The content is customized."
     ></q-footer>
     <q-footer
       links="{{links.slice(0,1)}}"
-      content="这是一行版本号版本号信息，内容自定义"
+      content="This is a line with versioning information. The content is customized."
     ></q-footer>
-    <q-footer content="底部文案自定义置底"></q-footer>
+    <q-footer content="Custom Bottom Text"></q-footer>
   </div>
 </template>
 ```
@@ -45,11 +45,11 @@ export default {
     return {
       links: [
         {
-          name: '底部链接',
+          name: 'Bottom Link',
           url: 'https://doc.quickapp.cn',
         },
         {
-          name: '底部链接',
+          name: 'Bottom Link',
           url: 'https://doc.quickapp.cn',
         },
       ],
@@ -73,19 +73,19 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性      | 类型   | 默认值 | 说明                   |
-| --------- | ------ | ------ | ---------------------- |
-| logo      | String | ''     | 图标图片链接或路由路径 |
-| content   | String | ''     | 描述内容文本           |
-| links     | Array  | []     | 链接数据               |
-| link.name | String | ''     | 链接名称               |
-| link.url  | String | ''     | 链接跳转地址           |
+| Attribute   | Type   | Value by default | Description                        |
+| ----------- | ------ | ---------------- | ---------------------------------- |
+| `logo`      | String | `''`             | Icon image URL or relative path    |
+| `content`   | String | `''`             | Descriptive text about the content |
+| `links`     | Array  | `[]`             | Linked data                        |
+| `link.name` | String | `''`             | Name of the link                   |
+| `link.url`  | String | `''`             | URL of the link                    |
 
 #### slot
 
-| 名称    | 描述           |
-| ------- | -------------- |
-| logo    | 自定义图标内容 |
-| content | 自定义样式内容 |
+| Name      | Description          |
+| --------- | -------------------- |
+| `logo`    | Custom icon content  |
+| `content` | Custom style content |

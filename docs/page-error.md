@@ -1,22 +1,22 @@
-## 异常页 page-error
+## Error Page (`page-error`)
 
-### 描述
+### Description
 
-用于展示一系列操作任务处理异常的页面
+This page is used to display and report unusual behavior of the system and exceptions.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/page-error.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-page-error" src="qaui/src/components/page-error/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -49,10 +49,10 @@ export default {
         'quick_app_offline',
         'version_too_low',
       ],
-      leftBtnName: '返回',
-      rightBtnName: '查看',
-      description: '这是描述文字描述文字描述文字描述文字描述文字',
-      footerBtnText: '底部文字按钮',
+      leftBtnName: 'Back',
+      rightBtnName: 'View',
+      description: 'Description Text Description Text Description Text',
+      footerBtnText: 'Bottom Text Button',
     }
   },
   leftBtn(data) {
@@ -86,21 +86,21 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性          | 类型   | 默认值       | 说明                                                                                                                                                                                          |
-| ------------- | ------ | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type          | String | 'page_error' | 默认类型(每种类型有默认配图和文字)，可选值有: 'page_error' \| 'network_anomaly' \| 'version_too_low' \| 'not_found' \| 'quick_app_offline' \| 'quick_app_not_online' \| 'certificate_expires' |
-| image         | String | ''           | 自定义异常图片                                                                                                                                                                                |
-| leftBtnName   | String | ''           | 左侧按钮名称                                                                                                                                                                                  |
-| rightBtnName  | String | ''           | 右侧按钮名称                                                                                                                                                                                  |
-| description   | String | ''           | 异常描述文字                                                                                                                                                                                  |
-| footerBtnText | String | ''           | 底部文字按钮内容                                                                                                                                                                              |
+| Attribute       | Type   | Value by default | Description                                                                                                                                                                                                                            |
+| --------------- | ------ | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`          | String | `'page_error'`   | Default type (each type has default graphics and text). The options are: `'page_error'` \| `'network_anomaly'` \| `'version_too_low'` \| `'not_found'` \| `'quick_app_offline'` \| `'quick_app_not_online'` \| `'certificate_expires'` |
+| `image`         | String | `''`             | Error image                                                                                                                                                                                                                            |
+| `leftBtnName`   | String | `''`             | Label of button on the left                                                                                                                                                                                                            |
+| `rightBtnName`  | String | `''`             | Label of button on the right                                                                                                                                                                                                           |
+| `description`   | String | `''`             | Error description                                                                                                                                                                                                                      |
+| `footerBtnText` | String | `''`             | Label of button at the bottom                                                                                                                                                                                                          |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称     | 事件描述         | 返回值 |
-| ------------ | ---------------- | ------ |
-| leftBtnTap   | 点击左侧按钮触发 | event  |
-| rightBtnTap  | 点击右侧按钮触发 | event  |
-| footerBtnTap | 点击底部按钮触发 | event  |
+| Event name     | Event description                | Value returned |
+| -------------- | -------------------------------- | -------------- |
+| `leftBtnTap`   | Clicked the button on the left   | `event`        |
+| `rightBtnTap`  | Clicked the button on the right  | `event`        |
+| `footerBtnTap` | Clicked the button at the bottom | `event`        |

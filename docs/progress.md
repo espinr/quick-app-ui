@@ -1,27 +1,27 @@
-## 加载进度条 progress
+## Progress Bar (`progress`)
 
-### 描述
+### Description
 
-用于展示加载进度，告知用户当前状态。
+Displays a progress bar and informs users of the loading current status.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/progress/"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-progress" src="qaui/src/components/progress/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="wrap">
-    <text class="title">progress进度条</text>
+    <text class="title"></text>
     <div class="progress-group">
       <div class="progress-box">
         <q-progress></q-progress>
@@ -36,7 +36,7 @@
         ></q-progress>
       </div>
     </div>
-    <text class="title">自定义进度条</text>
+    <text class="title">Customizing the progress bar</text>
     <div class="progress-group">
       <div class="progress-box">
         <q-progress
@@ -72,7 +72,7 @@ export default {
       progressWidth: '750px',
       strokeColor: '#1E90FF',
       trailColor: 'rgba(255,215,0,.5)',
-      format: (percentage) => '已下载' + percentage + '%',
+      format: (percentage) => 'Downloaded ' + percentage + '%',
     }
   },
 }
@@ -111,15 +111,15 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性          | 类型     | 默认值                           | 说明                                                  |
-| ------------- | -------- | -------------------------------- | ----------------------------------------------------- |
-| percentage    | Number   | 50                               | 进度条百分比，可选值 0-100，可以为小数                |
-| progressWidth | String   | '100%'                           | 进度条组件的宽度(宽度包含文字的宽度，支持百分比和 px) |
-| strokeHeight  | Number   | 2                                | 进度条的高度                                          |
-| isContentShow | Boolean  | false                            | 是否显示右侧文字                                      |
-| format        | Function | (percentage) => percentage + '%' | 右侧描述文字的模板函数                                |
-| contentStyle  | Object   | {}                               | 自定义右侧文字的样式                                  |
-| strokeColor   | String   | '#456fff'                        | 进度条的颜色                                          |
-| trailColor    | String   | 'rgba(0, 0, 0, 0.12)'            | 未完成分段的颜色                                      |
+| Attribute       | Type     | Value by default                   | Description                                                                                       |
+| --------------- | -------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `percentage`    | Number   | `50`                               | Progress bar percentage. The value ranges from `0` to `100` and can be a decimal.                 |
+| `progressWidth` | String   | `'100%'`                           | Width of the progress bar component (including the width of the text. `%` and `px` are supported) |
+| `strokeHeight`  | Number   | `2`                                | Height of the progress bar                                                                        |
+| `isContentShow` | Boolean  | `false`                            | Whether to display text on the right or not                                                       |
+| `format`        | Function | `(percentage) => percentage + '%'` | Template function of the text description on the right                                            |
+| `contentStyle`  | Object   | `{}`                               | Customize the style of text on the right                                                          |
+| `strokeColor`   | String   | `'#456fff'`                        | Color of the progress bar                                                                         |
+| `trailColor`    | String   | `'rgba(0, 0, 0, 0.12)'`            | Color of incomplete segments                                                                      |

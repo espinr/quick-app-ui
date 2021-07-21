@@ -1,22 +1,22 @@
-## 图标 icon
+## Icon (`icon`)
 
-### 描述
+### Description
 
-用于各类业务逻辑场景的基础组件。
+Basic icon component.
 
-### 图标列表
+### List of icons
 
 <icon/>
 
-### 使用方法
+### Usage
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-icon" src="qaui/src/components/icon/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -48,10 +48,10 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性  | 类型   | 默认值  | 说明     |
-| ----- | ------ | ------- | -------- |
-| type  | String | 'empty' | 图标类型 |
-| size  | String | '14'    | 图标大小 |
-| color | String | ''      | 图标颜色 |
+| Attribute | Type   | Value by default | Description |
+| --------- | ------ | ---------------- | ----------- |
+| `type`    | String | `''`             | Icon type   |
+| `size`    | String | `'14'`           | Icon size   |
+| `color`   | String | `''`             | Color       |

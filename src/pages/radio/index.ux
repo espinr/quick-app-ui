@@ -2,7 +2,7 @@
 <import name="q-radio-group" src="../../components/radio-group/index"></import>
 <template>
   <div class="qaui-wrap">
-    <text class="title">default样式</text>
+    <text class="title">Default style</text>
     <q-radio-group id="myGroup1" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup1"
@@ -11,7 +11,7 @@
         checked="{{$item.checked}}"
       ></q-radio>
     </q-radio-group>
-    <text class="title">list样式</text>
+    <text class="title">list style</text>
     <q-radio-group id="myGroup2" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup2"
@@ -22,7 +22,7 @@
         disabled="{{$item.disabled}}"
       ></q-radio>
     </q-radio-group>
-    <text class="title">dot样式</text>
+    <text class="title">dot style</text>
     <q-radio-group id="myGroup3" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup3"
@@ -42,20 +42,20 @@ export default {
       list: [
         {
           id: 1,
-          value: '单选项1',
+          value: 'Single option #1',
         },
         {
           id: 2,
-          value: '单选项2',
+          value: 'Single option #2',
           checked: true,
           disabled: true,
         },
         {
           id: 3,
-          value: '单选项3',
+          value: 'Single option #3',
         },
       ],
-      current: '单选项2',
+      current: 'Single option #2',
     }
   },
   handleChange({ detail }) {

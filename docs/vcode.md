@@ -1,22 +1,22 @@
-## 验证码 vcode
+## CAPTCHA (`vcode`)
 
-### 描述
+### Description
 
-用于处理用户输入验证码的组件。
+Component used to process verification codes (CAPTCHA).
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/vcode"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-vcode" src="qaui/src/components/vcode/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -63,17 +63,17 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性  | 类型   | 默认值 | 说明                                 |
-| ----- | ------ | ------ | ------------------------------------ |
-| time  | Number | 120    | 发送验证码后等待时间，单位秒         |
-| image | String | ''     | 图片验证码地址，传入则显示图片验证码 |
+| Attribute | Type   | Value by default | Description                                                                                                  |
+| --------- | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| `time`    | Number | `120`            | Waiting time after the verification code is sent, in seconds.                                                |
+| `image`   | String | `''`             | Image verification code address. If this parameter is transferred, the image verification code is displayed. |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述                           | 返回值        |
-| -------- | ---------------------------------- | ------------- |
-| send     | 获取验证码按钮点击事件             | -             |
-| change   | 验证码输入框值变更事件             | {value:value} |
-| image    | 验证图片点击事件，用于更换验证图片 | -             |
+| Event name | Event description                                                                | Value returned  |
+| ---------- | -------------------------------------------------------------------------------- | --------------- |
+| `send`     | Event of clicking the button for obtaining a verification code                   | -               |
+| `change`   | Verification code text box value change event                                    | `{value:value}` |
+| `image`    | Verification image click event, which is used to replace the verification image. | -               |

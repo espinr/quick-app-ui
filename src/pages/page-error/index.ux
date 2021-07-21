@@ -28,10 +28,10 @@ export default {
         'quick_app_not_online',
         'certificate_expires',
       ],
-      leftBtnName: '返回',
-      rightBtnName: '查看',
-      description: '这是描述文字描述文字描述文字描述文字描述文字',
-      footerBtnText: '底部文字按钮',
+      leftBtnName: 'Back',
+      rightBtnName: 'View',
+      description: '这是Description Text Description Text Description Text',
+      footerBtnText: 'Bottom Text Button',
     }
   },
   leftBtn(data) {

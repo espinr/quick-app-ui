@@ -29,12 +29,12 @@ export default {
   props: {
     description: {
       type: String,
-      default: '这里添加描述文字',
+      default: '这里添加Description Text',
       required: true,
     },
     btnText: {
       type: String,
-      default: '添加',
+      default: 'Add',
       required: true,
     },
     icon: {

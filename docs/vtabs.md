@@ -1,23 +1,23 @@
-## 纵向选项卡 vtabs
+## Vertical Tabs (`vtabs`)
 
-### 描述
+### Description
 
-纵向的标签页切换。
+Tabs oriented vertically to switch actions and access different pages.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/vtabs"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-tabs" src="qaui/src/components/vtabs/index"></import>
 <import name="q-tabbar" src="qaui/src/components/tabbar/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -42,7 +42,7 @@
             <block for="{{ data }}">
               <div class="item-container">
                 <div class="item-content">
-                  <text>标签{{ $idx + 1 }}内容</text>
+                  <text>Tab#{{ $idx + 1 }} Content</text>
                 </div>
               </div>
             </block>
@@ -60,7 +60,7 @@
             <block for="{{ data }}">
               <div class="item-container">
                 <div class="item-content">
-                  <text>标签{{ $idx + 1 }}内容</text>
+                  <text>Tab#{{ $idx + 1 }} Content</text>
                 </div>
               </div>
             </block>
@@ -78,7 +78,7 @@
             <block for="{{ data }}">
               <div class="item-container">
                 <div class="item-content">
-                  <text>标签{{ $idx + 1 }}内容</text>
+                  <text>Tab#{{ $idx + 1 }} Content</text>
                 </div>
               </div>
             </block>
@@ -96,37 +96,37 @@ export default {
   data() {
     return {
       data: [
-        { label: '标签文字', icon: 'qrcode-fill' },
-        { label: '标签文字', icon: 'send' },
-        { label: '标签文字', icon: 'call-forwarding' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
-        { label: '标签文字', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'qrcode-fill' },
+        { label: 'Label Text', icon: 'send' },
+        { label: 'Label Text', icon: 'call-forwarding' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
+        { label: 'Label Text', icon: 'restore-call-records' },
       ],
       tabbarData: [
         {
           icon: 'homepage',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '普通标签',
+          text: 'Home',
         },
         {
           icon: 'qrcode',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '胶囊标签',
+          text: 'Products',
         },
         {
           icon: 'contact-fill',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '描述标签',
+          text: 'Contact',
         },
       ],
       iconSize: 22,
@@ -155,23 +155,23 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性        | 类型   | 默认值    | 说明                                                        |
-| ----------- | ------ | --------- | ----------------------------------------------------------- |
-| type        | String | 'default' | 标签类型,必填. 可选值有：'default'\|'capsule'\|'icon-label' |
-| activeColor | String | '#456fff' | 激活时标签颜色                                              |
-| data        | Array  | [ ]       | data 数据对象数组，对象数据结构见下表                       |
+| Attribute     | Type   | Value by default | Description                                                                       |
+| ------------- | ------ | ---------------- | --------------------------------------------------------------------------------- |
+| `type`        | String | `'default'`      | Label type (mandatory). Options are: `'default'`\|`'capsule'`\|`'icon-label'`     |
+| `activeColor` | String | `'#456fff'`      | Color of the active label tab                                                     |
+| `data`        | Array  | `[ ]`            | data object array. The object data structure is described in the following table. |
 
-data 内对象的属性说明
+##### data Object Attributes
 
-| 属性  | 类型   | 默认值 | 说明                                          |
-| :---- | :----- | :----- | :-------------------------------------------- |
-| label | String | ''     | 标签文字，必填                                |
-| icon  | String | ''     | icon 名称，仅当 type 为`icon-label`有效，必填 |
+| Attribute | Type   | Default | Description                                                                                |
+| :-------- | :----- | :------ | :----------------------------------------------------------------------------------------- |
+| `label`   | String | `''`    | Text of the label (mandatory)                                                              |
+| `icon`    | String | `''`    | Specifies the icon name. This parameter is mandatory only when type is set to `icon-label` |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述       | 返回值                              |
-| -------- | -------------- | ----------------------------------- |
-| tap      | 切换标签时触发 | {detail：{index: 当前点击项的索引}} |
+| Event name | Event description                | Value returned                                 |
+| ---------- | -------------------------------- | ---------------------------------------------- |
+| `tap`      | Triggered when a tag is switched | `{detail:{index: Index of the current click}}` |

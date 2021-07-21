@@ -2,21 +2,21 @@
 <template>
   <div class="qaui-wrap">
     <q-footer
-      content="这是一行版本号版本号信息，内容自定义"
+      content="This is a line with versioning information. The content is customized."
       logo="/common/logo.png"
     ></q-footer>
     <div class="space"></div>
     <q-footer
       links="{{links}}"
-      content="这是一行版本号版本号信息，内容自定义"
+      content="This is a line with versioning information. The content is customized."
     ></q-footer>
     <div class="space"></div>
     <q-footer
       links="{{links.slice(0,1)}}"
-      content="这是一行版本号版本号信息，内容自定义"
+      content="This is a line with versioning information. The content is customized."
     ></q-footer>
     <div class="space"></div>
-    <q-footer content="底部文案自定义置底"></q-footer>
+    <q-footer content="Custom Bottom Text"></q-footer>
   </div>
 </template>
 
@@ -27,11 +27,11 @@ export default {
     return {
       links: [
         {
-          name: '底部链接',
+          name: 'Bottom Link',
           url: 'https://doc.quickapp.cn',
         },
         {
-          name: '底部链接',
+          name: 'Bottom Link',
           url: 'https://doc.quickapp.cn',
         },
       ],

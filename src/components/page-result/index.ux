@@ -48,8 +48,8 @@ export default {
   data() {
     return {
       isSlot: false, //判断用户是否传了slot
-      iconType: '', //图标类型
-      iconColor: '', //图标颜色
+      iconType: '', //Icon type
+      iconColor: '', //Color
     }
   },
   props: {

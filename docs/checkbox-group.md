@@ -1,16 +1,16 @@
-## 多选按钮组 checkbox-group
+## Checkbox Group (`checkbox-group`)
 
-### 描述
+### Description
 
-用于给表单中的多选框分组，提供了多个相关多选框的操作方法。需要配合`checkbox`使用。
+It is used to group multiple selection boxes in the form, and provides multiple operation methods for related multiple selection boxes. Need to be used with `checkbox`.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/checkbox.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import
@@ -19,7 +19,7 @@
 ></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -49,25 +49,25 @@ export default {
       list: [
         {
           id: 1,
-          value: '多选项1',
+          value: 'Option 1',
         },
         {
           id: 2,
-          value: '多选项2',
+          value: 'Option 2',
           checked: true,
           disabled: true,
         },
         {
           id: 3,
-          value: '多选项3',
+          value: 'Option 3',
         },
         {
           id: 4,
-          value: '多选项4',
+          value: 'Option 4',
           disabled: true,
         },
       ],
-      current: ['多选项2', '多选项1'],
+      current: ['Option 2', 'Option 1'],
     }
   },
   handleChange({ detail }) {
@@ -90,15 +90,15 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性    | 类型   | 默认值 | 说明                             |
-| ------- | ------ | ------ | -------------------------------- |
-| current | Array  | []     | 默认处于选中状态的 checkbox 的值 |
-| id      | String | -      | 组的 id，用于区分不同组，必填项  |
+| Attribute | Type   | Value by default | Description                                                                                |
+| --------- | ------ | ---------------- | ------------------------------------------------------------------------------------------ |
+| `current` | Array  | `[]`             | Value of the selected `checkbox` by default                                                |
+| `id`      | String | -                | The `id` of the group, which is used to differentiate groups. This attribute is mandatory. |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述         | 返回值                         |
-| -------- | ---------------- | ------------------------------ |
-| change   | 值发生变化的事件 | {current:current, value:value} |
+| Event name | Event description | Value returned                   |
+| ---------- | ----------------- | -------------------------------- |
+| `change`   | Change of value   | `{current:current, value:value}` |

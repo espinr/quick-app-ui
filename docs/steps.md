@@ -1,98 +1,146 @@
-## 步骤条 steps
+## Steps Bar (`steps`)
 
-### 描述
+### Description
 
-显示任务的进度/引导用户完成某些操作
+Shows the progress in a process with different stages.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/steps.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-steps" src="qaui/src/components/steps/index"></import>
 <import name="q-step" src="qaui/src/components/step/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-steps">
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="11" current="{{1}}">
-        <q-step title="步骤1" group-id="11"></q-step>
-        <q-step title="步骤2状态说明" group-id="11"></q-step>
-        <q-step title="步骤3" group-id="11"></q-step>
+        <q-step title="Step #1" group-id="11"></q-step>
+        <q-step title="Step #2" group-id="11"></q-step>
+        <q-step title="Step #3" group-id="11"></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="12" current="{{1}}">
-        <q-step title="步骤1" group-id="12" content="步骤一状态说明"></q-step>
-        <q-step title="步骤2" content="步骤二状态说明" group-id="12"></q-step>
-        <q-step title="步骤3" content="步骤二状态说明" group-id="12"></q-step>
-        <q-step title="步骤4" content="步骤二状态说明" group-id="12"></q-step>
+        <q-step
+          title="Step #1"
+          group-id="12"
+          content="Step 1 Description"
+        ></q-step>
+        <q-step
+          title="Step #2"
+          content="Step 2 Description"
+          group-id="12"
+        ></q-step>
+        <q-step
+          title="Step #3"
+          content="Step 3 Description"
+          group-id="12"
+        ></q-step>
+        <q-step
+          title="Step #4"
+          content="Step 4 Description"
+          group-id="12"
+        ></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="16" current="{{1}}" has-icon="{{true}}">
-        <q-step title="步骤1" group-id="16" content="步骤一状态说明"></q-step>
         <q-step
-          title="步骤2"
+          title="Step #1"
           group-id="16"
-          content="步骤一状态说明"
+          content="Step 1 Description"
+        ></q-step>
+        <q-step
+          title="Step #2"
+          group-id="16"
+          content="Step Description"
           status="error"
         ></q-step>
-        <q-step title="步骤3" group-id="16" content="步骤一状态说明"></q-step>
+        <q-step
+          title="Step #3"
+          group-id="16"
+          content="Step 3 Description"
+        ></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="17" current="{{1}}" has-text="{{true}}">
-        <q-step title="步骤1" group-id="17" content="步骤一状态说明"></q-step>
         <q-step
-          title="步骤2"
+          title="Step #1"
           group-id="17"
-          content="步骤一状态说明"
+          content="Step 1 Description"
+        ></q-step>
+        <q-step
+          title="Step #2"
+          group-id="17"
+          content="Step 2 Description"
           status="error"
         ></q-step>
-        <q-step title="步骤3" group-id="17" content="步骤一状态说明"></q-step>
+        <q-step
+          title="Step #3"
+          group-id="17"
+          content="Step 3 Description"
+        ></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="column" id="13" current="{{1}}" has-text="{{true}}">
         <q-step
-          title="步骤1"
-          content="步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明"
+          title="Step #1"
+          content="Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description"
           group-id="13"
         ></q-step>
         <q-step
-          title="步骤2"
-          content="步骤二状态说明"
+          title="Step #2"
+          content="Step Description"
           group-id="13"
           status="error"
         ></q-step>
-        <q-step title="步骤3" content="步骤三状态说明" group-id="13"></q-step>
-        <q-step title="步骤4" content="步骤四状态说明" group-id="13"></q-step>
+        <q-step
+          title="Step #3"
+          content="Step 3 Description"
+          group-id="13"
+        ></q-step>
+        <q-step
+          title="Step #4"
+          content="Step 4 Description"
+          group-id="13"
+        ></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="column" id="18" current="{{1}}" has-icon="{{true}}">
         <q-step
-          title="步骤1"
-          content="步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明"
+          title="Step #1"
+          content="Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description"
           group-id="18"
         ></q-step>
         <q-step
-          title="步骤2"
-          content="步骤二状态说明"
+          title="Step #2"
+          content="Step Description"
           group-id="18"
           status="error"
         ></q-step>
-        <q-step title="步骤3" content="步骤三状态说明" group-id="18"></q-step>
-        <q-step title="步骤4" content="步骤四状态说明" group-id="18"></q-step>
+        <q-step
+          title="Step #3"
+          content="Step 3 Description"
+          group-id="18"
+        ></q-step>
+        <q-step
+          title="Step #4"
+          content="Step 4 Description"
+          group-id="18"
+        ></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
@@ -104,19 +152,27 @@
         current="{{1}}"
       >
         <q-step
-          title="自定义颜色"
-          content="步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明"
+          title="Custom Color"
+          content="Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description"
           group-id="14"
         ></q-step>
         <q-step
-          title="步骤2"
+          title="Step #2"
           icon="close"
-          content="步骤二状态说明"
+          content="Step Description"
           group-id="14"
           status="error"
         ></q-step>
-        <q-step title="步骤3" content="步骤三状态说明" group-id="14"></q-step>
-        <q-step title="步骤4" content="步骤四状态说明" group-id="14"></q-step>
+        <q-step
+          title="Step #3"
+          content="Step 3 Description"
+          group-id="14"
+        ></q-step>
+        <q-step
+          title="Step #4"
+          content="Step 4 Description"
+          group-id="14"
+        ></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
@@ -128,18 +184,30 @@
         current="{{ current }}"
       >
         <q-step
-          title="步骤1"
-          content="步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明步骤一状态说明"
+          title="Step #1"
+          content="Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description"
           group-id="15"
         ></q-step>
-        <q-step title="步骤2" content="步骤二状态说明" group-id="15"></q-step>
-        <q-step title="步骤3" content="步骤三状态说明" group-id="15"></q-step>
-        <q-step title="步骤4" content="步骤四状态说明" group-id="15"></q-step>
+        <q-step
+          title="Step #2"
+          content="Step Description"
+          group-id="15"
+        ></q-step>
+        <q-step
+          title="Step #3"
+          content="Step 3 Description"
+          group-id="15"
+        ></q-step>
+        <q-step
+          title="Step #4"
+          content="Step 4 Description"
+          group-id="15"
+        ></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-button">
       <q-button class="button" type="ghost" ontap="changeStatus"
-        >下一步</q-button
+        >Next Step</q-button
       >
     </div>
   </div>
@@ -178,24 +246,24 @@ export default {
 }
 ```
 
-### steps 组件属性
+### steps Component Properties
 
-| 属性          | 类型    | 默认值       | 说明                                                         |
-| ------------- | ------- | ------------ | ------------------------------------------------------------ |
-| current       | Number  | 0            | 当前步骤，从 0 开始                                          |
-| direction     | String  | 'horizontal' | 排列方式，可选值为 'vertical' \|'horizontal'                 |
-| id            | String  | ''           | ID，必填, 当多个 steps 组件同时使用时需保持 steps 的 id 不同 |
-| hasText       | Boolean | false        | 步骤是否显示默认样式的数字                                   |
-| hasIcon       | Boolean | false        | 步骤是否默认样式的 icon                                      |
-| finishedColor | String  | \#456FFF     | 自定义的 finished 状态的颜色                                 |
-| errorColor    | String  | \#F19E38     | 自定义的 error 状态的颜色                                    |
+| Attribute       | Type    | Value by default | Description                                                                                                    |
+| --------------- | ------- | ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| `current`       | Number  | `0`              | Current step, starting from `0`                                                                                |
+| `direction`     | String  | `'horizontal'`   | Arrangement mode. The options are: `'vertical'` \|`'horizontal'`                                               |
+| `id`            | String  | `''`             | ID (mandatory). When multiple steps components are used at the same time, the IDs of the steps must be unique. |
+| `hasText`       | Boolean | `false`          | Indicates whether to display integers in the default style.                                                    |
+| `hasIcon`       | Boolean | `false`          | Indicates if the step has `icon`                                                                               |
+| `finishedColor` | String  | `#456FFF`        | Customized color of the `finished` status                                                                      |
+| `errorColor`    | String  | `#F19E38`        | Customized color of the `error` status                                                                         |
 
-### step 组件属性
+### step Component Properties
 
-| 属性    | 类型   | 默认值    | 说明                                                             |
-| ------- | ------ | --------- | ---------------------------------------------------------------- |
-| status  | String | 'waiting' | step 的当前状态：'waiting' \| 'proceed' \| 'finished' \| 'error' |
-| icon    | String | ''        | icon 样式，具体样式查看 icon 组件                                |
-| groupId | String | ''        | ID，必填（需与父组件的 id 保持一致）                             |
-| title   | String | ''        | 自定义标题                                                       |
-| content | String | ''        | 自定义内容                                                       |
+| Attribute | Type   | Value by default | Description                                                                       |
+| --------- | ------ | ---------------- | --------------------------------------------------------------------------------- |
+| `status`  | String | `'waiting'`      | Current status of a step: `'waiting'` \| `'proceed'` \| `'finished'` \| `'error'` |
+| `icon`    | String | `''`             | Style of the icon. For more details see the `icon` component.                     |
+| `groupId` | String | `''`             | ID of the parent component (mandatory).                                           |
+| `title`   | String | `''`             | Custom title                                                                      |
+| `content` | String | `''`             | Custom content                                                                    |

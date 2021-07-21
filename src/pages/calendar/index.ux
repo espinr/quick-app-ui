@@ -24,18 +24,18 @@ export default {
       desc: [
         {
           date: '2020-10-15',
-          top: '描述文字',
-          bottom: '描述文字',
+          top: 'Description Text',
+          bottom: 'Description Text',
         },
         {
           date: '2020-10-21',
-          top: '描述文字',
-          bottom: '描述文字',
+          top: 'Description Text',
+          bottom: 'Description Text',
         },
         {
           date: '2020-10-25',
-          top: '描述文字',
-          bottom: '描述文字',
+          top: 'Description Text',
+          bottom: 'Description Text',
         },
       ],
     }

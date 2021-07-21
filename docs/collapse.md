@@ -1,16 +1,16 @@
-## 折叠面板 collapse
+## Accordion (`collapse`)
 
-### 描述
+### Description
 
-对复杂区域进行展开和隐藏，其中‘手风琴’是一种特殊的折叠面板，只允许单个内容区域展开
+Expands and collapse panels. The accordion is a special folding panel that allows only a single container to be expanded.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/collapse-group/"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import
@@ -20,56 +20,56 @@
 <import name="q-collapse" src="qaui/src/components/collapse/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
     <q-collapse-group
-      title="基础用法"
+      title="Basic Usage"
       id="1"
       default-open="{{['key1','key2']}}"
       onchange="change"
     >
       <q-collapse
-        title="标题文字1"
-        content="内容区域1"
+        title="Title Text1"
+        content="Content 1"
         group-id="1"
         key="key1"
       ></q-collapse>
       <q-collapse
-        title="标题文字2"
-        content="内容区域2"
+        title="Title Text2"
+        content="Content 2"
         group-id="1"
         key="key2"
         icon="theme-sms"
       ></q-collapse>
       <q-collapse
-        title="标题文字3"
-        content="内容区域3"
+        title="Title Text3"
+        content="Content 3"
         group-id="1"
         key="key3"
         thumb="../../common/logo.png"
       ></q-collapse>
     </q-collapse-group>
     <div style="margin-top: 20px">
-      <q-collapse-group title="手风琴用法" id="2" accordion="{{true}}">
+      <q-collapse-group title="Accordion Usage" id="2" accordion="{{true}}">
         <q-collapse
-          title="标题文字1"
-          content="内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1"
+          title="Title Text1"
+          content="Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1"
           group-id="2"
           key="key4"
         ></q-collapse>
         <q-collapse
-          title="标题文字2"
-          content="内容区域2"
+          title="Title Text2"
+          content="Content 2"
           group-id="2"
           key="key5"
           icon="theme-sms"
         ></q-collapse>
         <q-collapse
-          title="标题文字3"
-          content="内容区域3"
+          title="Title Text3"
+          content="Content 3"
           group-id="2"
           key="key6"
         ></q-collapse>
@@ -78,15 +78,15 @@
     <div style="margin-top: 20px">
       <q-collapse-group title="禁用示例" id="3" accordion="{{true}}">
         <q-collapse
-          title="标题文字1"
-          content="内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1内容区域1"
+          title="Title Text1"
+          content="Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1"
           group-id="3"
           key="key7"
           disabled="true"
         ></q-collapse>
         <q-collapse
-          title="标题文字2"
-          content="内容区域2"
+          title="Title Text2"
+          content="Content 2"
           group-id="3"
           key="key8"
           icon="theme-sms"
@@ -115,29 +115,29 @@ export default {
 
 ### API
 
-#### collapse-group 组件属性
+#### collapse-group Component Properties
 
-| 属性        | 类型    | 默认值 | 说明                                      |
-| ----------- | ------- | ------ | ----------------------------------------- |
-| defaultOpen | Array   | []     | 默认处于打开状态的子组件的 key 组成的数组 |
-| accordion   | Boolean | false  | 手风琴模式，只有一个子组件能处于打开状态  |
-| title       | String  | ''     | 自定义标题                                |
-| id          | String  | ''     | ID，必填                                  |
+| Attribute     | Type    | Value by default | Description                                                             |
+| ------------- | ------- | ---------------- | ----------------------------------------------------------------------- |
+| `defaultOpen` | Array   | `[]`             | Array consisting of `key`s of subcomponents that are enabled by default |
+| `accordion`   | Boolean | `false`          | Accordion mode, only one subcomponent can be shown.                     |
+| `title`       | String  | `''`             | Custom title                                                            |
+| `id`          | String  | `''`             | ID (mandatory)                                                          |
 
-#### collapse 组件属性
+#### collapse Component Properties
 
-| 属性     | 类型    | 默认值 | 说明                                                                                              |
-| -------- | ------- | ------ | ------------------------------------------------------------------------------------------------- |
-| key      | String  | ''     | 索引                                                                                              |
-| thumb    | String  | ''     | 左侧缩略图的路径，同时支持本地和云端路径，支持的图片格式包括静态类型（png, jpg）和动态类型（gif） |
-| icon     | String  | ''     | icon 的类型，具体参考 icon 组件                                                                   |
-| title    | String  | ''     | 自定义标题                                                                                        |
-| content  | String  | ''     | 自定义内容                                                                                        |
-| disabled | Boolean | false  | 是否禁用                                                                                          |
-| groupId  | String  | ''     | 必填（需与父组件的 ID 保持一致）                                                                  |
+| Attribute  | Type    | Value by default | Description                                                                                             |
+| ---------- | ------- | ---------------- | ------------------------------------------------------------------------------------------------------- |
+| `key`      | String  | `''`             | Index key                                                                                               |
+| `thumb`    | String  | `''`             | URL or local path of the thumbnail on the left. The supported image formats include (png, jpg and gif). |
+| `icon`     | String  | `''`             | Type of the icon. For more details see the `icon` component.                                            |
+| `title`    | String  | `''`             | Custom title                                                                                            |
+| `content`  | String  | `''`             | Custom content                                                                                          |
+| `disabled` | Boolean | `false`          | Disable the component                                                                                   |
+| `groupId`  | String  | `''`             | The ID of the parent component (mandatory)                                                              |
 
-### collapse-group 组件事件
+### collapse-group Component Events
 
-| 事件名称 | 事件描述       | 返回值             |
-| -------- | -------------- | ------------------ |
-| change   | 切换面板的回调 | { key:currentkey } |
+| Event name | Event description | Value returned       |
+| ---------- | ----------------- | -------------------- |
+| `change`   | Toggle the panel  | `{ key:currentkey }` |

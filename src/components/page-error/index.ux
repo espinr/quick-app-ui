@@ -71,7 +71,7 @@
 export default {
   data() {
     return {
-      textContent: '', //文字描述内容
+      textContent: '', //文字Description
     }
   },
   props: {
@@ -96,7 +96,7 @@ export default {
       default: '',
     },
     description: {
-      //接收用户传来的描述文字
+      //接收用户传来的Description Text
       type: String,
       default: '',
     },
@@ -110,7 +110,7 @@ export default {
     //设置默认的配图和文字
     this.setDefaultAttributes(this.type)
 
-    //如果用户传了描述文字，就使用用户自定义的文字
+    //如果用户传了Description Text，就使用用户自定义的文字
     if (this.description) {
       this.textContent = this.description
     }

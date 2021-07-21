@@ -1,27 +1,27 @@
-## 单选按钮 radio
+## Radio Button (`radio`)
 
-### 描述
+### Description
 
-用于让用户在表单选择单个信息项。
+Used to allow users to select a single item of information in a form.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/radio.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-radio" src="qaui/src/components/radio/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
-    <text class="title">default样式</text>
+    <text class="title">Default style</text>
     <q-radio-group id="myGroup1" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup1"
@@ -30,7 +30,7 @@
         checked="{{$item.checked}}"
       ></q-radio>
     </q-radio-group>
-    <text class="title">list样式</text>
+    <text class="title">list style</text>
     <q-radio-group id="myGroup2" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup2"
@@ -40,7 +40,7 @@
         checked="{{$item.checked}}"
       ></q-radio>
     </q-radio-group>
-    <text class="title">dot样式</text>
+    <text class="title">dot style</text>
     <q-radio-group id="myGroup3" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup3"
@@ -61,19 +61,19 @@ export default {
       list: [
         {
           id: 1,
-          value: '单选项1',
+          value: 'Single option #1',
         },
         {
           id: 2,
-          value: '单选项2',
+          value: 'Single option #2',
           checked: true,
         },
         {
           id: 3,
-          value: '单选项3',
+          value: 'Single option #3',
         },
       ],
-      current: '单选项2',
+      current: 'Single option #2',
     }
   },
   handleChange({ detail }) {
@@ -99,18 +99,18 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性     | 类型    | 默认值    | 说明                                          |
-| -------- | ------- | --------- | --------------------------------------------- |
-| checked  | Boolean | false     | 是否处于选中状态                              |
-| disabled | Boolean | false     | 是否处于禁用状态                              |
-| type     | String  | 'default' | 选择器样式，可选值有 'default'\|'list'\|'dot' |
-| value    | String  | -         | 展示选项的值                                  |
-| group    | String  | -         | 单选框所在组的 id 值                          |
+| Attribute  | Type    | Value by default | Description                                                         |
+| ---------- | ------- | ---------------- | ------------------------------------------------------------------- |
+| `checked`  | Boolean | `false`          | Whether it is selected or not                                       |
+| `disabled` | Boolean | `false`          | Disabled                                                            |
+| `type`     | String  | `'default'`      | Optional selector style. Values are: `'default'`\|`'list'`\|`'dot'` |
+| `value`    | String  | -                | The value of the option                                             |
+| `group`    | String  | -                | Indicates the `id` of the group to which the radio box belongs.     |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述         | 返回值                         |
-| -------- | ---------------- | ------------------------------ |
-| change   | 值发生变化的事件 | {current:current, value:value} |
+| Event name | Event description   | Value returned                   |
+| ---------- | ------------------- | -------------------------------- |
+| `change`   | Change of the value | `{current:current, value:value}` |

@@ -3,7 +3,7 @@
 <template>
   <div class="qaui-wrap">
     <q-list
-      title="列表标题"
+      title="List Title"
       data="{{ listData }}"
       onitem-tap="itemTap"
       onsamll-btn-tap="smallBtnTap"
@@ -18,114 +18,114 @@ export default {
     return {
       listData: [
         {
-          title: '标题文字',
+          title: 'Title text',
         },
         {
-          title: '标题文字',
+          title: 'Title text',
           extra: 'rightArrow',
         },
         {
-          title: '标题文字',
-          rightText: '结果文字',
+          title: 'Title text',
+          rightText: 'Result Text',
         },
         {
-          title: '标题文字',
-          rightText: '结果文字',
+          title: 'Title text',
+          rightText: 'Result Text',
           extra: 'rightArrow',
         },
         {
-          title: '标题文字',
+          title: 'Title text',
           extra: 'switch',
           switchValue: true,
         },
         {
-          title: '标题文字',
+          title: 'Title text',
           extra: 'button',
-          rightBtnText: '按钮',
+          rightBtnText: 'Button',
         },
         {
-          title: '标题文字1',
+          title: 'Title Text #1',
           iconType: 'bill-fill',
           extra: 'rightArrow',
         },
         {
-          title: '标题文字1',
+          title: 'Title Text #1',
           iconType: 'bill-fill',
-          rightText: '结果文字',
+          rightText: 'Result Text',
           extra: 'rightArrow',
         },
         {
-          title: '标题文字1',
+          title: 'Title Text #1',
           iconType: 'bill-fill',
           extra: 'switch',
           switchValue: true,
         },
         {
-          title: '标题文字4',
+          title: 'Title Text #4',
           thumb: '../../common/logo.png',
         },
         {
-          title: '标题文字',
-          description: '这是一段描述文字',
+          title: 'Title text',
+          description: 'This is a section of Description Text',
         },
         {
-          title: '标题文字',
-          description: '这是一段描述文字',
+          title: 'Title text',
+          description: 'This is a section of Description Text',
           extra: 'rightArrow',
         },
         {
-          title: '标题文字',
-          description: '这是一段描述文字',
-          rightText: '结果文字',
+          title: 'Title text',
+          description: 'This is a section of Description Text',
+          rightText: 'Result Text',
         },
         {
-          title: '标题文字',
-          description: '这是一段描述文字',
+          title: 'Title text',
+          description: 'This is a section of Description Text',
           extra: 'rightArrow',
-          rightText: '结果文字',
+          rightText: 'Result Text',
         },
         {
-          title: '标题文字',
-          description: '这是一段描述文字',
+          title: 'Title text',
+          description: 'This is a section of Description Text',
           extra: 'switch',
           switchValue: true,
         },
         {
-          title: '标题文字',
-          description: '这是一段描述文字',
+          title: 'Title text',
+          description: 'This is a section of Description Text',
           extra: 'button',
-          rightBtnText: '按钮',
+          rightBtnText: 'Button',
         },
         {
-          title: '标题文字1',
+          title: 'Title Text #1',
           iconType: 'bill-fill',
-          description: '这是一段描述文字',
+          description: 'This is a section of Description Text',
           extra: 'rightArrow',
         },
         {
-          title: '标题文字2',
-          description: '这是一段描述文字2',
+          title: 'Title Text #2',
+          description: 'This is a section of Description Text2',
           iconType: 'bill-fill',
-          rightText: '结果文字',
+          rightText: 'Result Text',
           extra: 'rightArrow',
         },
         {
-          title: '标题文字2',
-          description: '这是一段描述文字2',
+          title: 'Title Text #2',
+          description: 'This is a section of Description Text2',
           iconType: 'bill-fill',
           extra: 'switch',
           switchValue: true,
         },
         {
-          title: '标题文字2',
-          description: '这是一段描述文字2',
+          title: 'Title Text #2',
+          description: 'This is a section of Description Text2',
           iconType: 'bill-fill',
           extra: 'button',
-          rightBtnText: '按钮',
+          rightBtnText: 'Button',
         },
         {
-          title: '标题文字3',
-          description: '这是一段描述文字2',
+          title: 'Title Text #3',
+          description: 'This is a section of Description Text2',
           thumb: '../../common/logo.png',
         },
       ],
@@ -134,17 +134,17 @@ export default {
 
   itemTap(data) {
     const index = data.detail.index
-    this.listData[index].title = `已选中第${index}行`
+    this.listData[index].title = `Selected ${index}行`
   },
 
   smallBtnTap(data) {
     const index = data.detail.index
-    this.listData[index].title = `选中小按钮${index}`
+    this.listData[index].title = `Select the small button ${index}`
   },
 
   switchTap(data) {
     const index = data.detail.index
-    this.listData[index].title = `选中switch按钮${index}`
+    this.listData[index].title = `Select the switch button ${index}`
   },
 }
 </script>

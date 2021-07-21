@@ -1,61 +1,61 @@
-## 按钮 button
+## Button (`button`)
 
-### 描述
+### Description
 
-用于各类业务逻辑场景的基础组件。
+Basic component for buttons.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/button.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-button" src="qaui/src/components/button/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qui-wrap">
     <div class="inline">
-      <q-button class="button" type="primary" size="small">主操作按钮</q-button>
+      <q-button class="button" type="primary" size="small">Primary</q-button>
       <q-button class="button" type="primary" size="small" disabled="{{true}}"
-        >主操作按钮</q-button
+        >Primary</q-button
       >
     </div>
     <div class="inline">
-      <q-button class="button" type="ghost" size="small">主操作按钮</q-button>
+      <q-button class="button" type="ghost" size="small">Ghost</q-button>
       <q-button class="button" type="ghost" size="small" disabled="{{true}}"
-        >主操作按钮</q-button
+        >Ghost</q-button
       >
     </div>
-    <q-button class="button" type="primary">主操作按钮</q-button>
+    <q-button class="button" type="primary">Primary</q-button>
     <q-button class="button" type="primary" disabled="{{true}}"
-      >不可点击状态</q-button
+      >Primary disabled</q-button
     >
     <q-button class="button" type="primary" loading="{{true}}"
-      >加载状态</q-button
+      >Primary loading</q-button
     >
 
-    <q-button class="button" type="ghost">描边按钮</q-button>
+    <q-button class="button" type="ghost">Ghost</q-button>
     <q-button class="button" type="ghost" color="orange" loading="{{true}}"
-      >自定义颜色按钮</q-button
+      >Custom color</q-button
     >
     <q-button class="button" type="ghost" disabled="{{true}}"
-      >不可点击状态</q-button
+      >Ghost disabled</q-button
     >
 
-    <q-button class="button" type="error">警示按钮</q-button>
+    <q-button class="button" type="error">Error</q-button>
     <q-button class="button" type="error" disabled="{{true}}"
-      >不可点击状态</q-button
+      >Error disabled</q-button
     >
 
     <q-button class="button" bg-color="orange" color="#000"
-      >自定义颜色按钮</q-button
+      >Custom color</q-button
     >
     <q-button
       class="button"
@@ -64,7 +64,7 @@
       bg-color="orange"
       color="#000"
       disabled="{{true}}"
-      >不可点击状态</q-button
+      >Customized</q-button
     >
   </div>
 </template>
@@ -82,20 +82,20 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性     | 类型    | 默认值    | 说明                                           |
-| -------- | ------- | --------- | ---------------------------------------------- |
-| type     | String  | 'primary' | 按钮类型，可选值有 'primary'\|'ghost'\|'error' |
-| size     | String  | 'normal'  | 按钮大小，可选值有 'normal'\|'small'           |
-| loading  | Boolean | false     | 按钮是否处于加载中                             |
-| disabled | Boolean | false     | 按钮是否被禁用                                 |
-| bgColor  | String  | ''        | 按钮背景颜色                                   |
-| color    | String  | ''        | 按钮颜色（包括文字和边框）                     |
-| width    | Number  | ''        | 按钮宽度                                       |
+| Attribute  | Type    | Value by default | Description                                                                |
+| ---------- | ------- | ---------------- | -------------------------------------------------------------------------- |
+| `type`     | String  | `'primary'`      | Button type. The options are as follows: `'primary'`\|`'ghost'`\|`'error'` |
+| `size`     | String  | `'normal'`       | Button size. The options are as follows: `'normal'`\|`'small'`             |
+| `loading`  | Boolean | `false`          | Whether the button is being loaded or not                                  |
+| `disabled` | Boolean | `false`          | Whether the button is disabled or not                                      |
+| `bgColor`  | String  | `''`             | Button background color                                                    |
+| `color`    | String  | `''`             | Button color (including text and border)                                   |
+| `width`    | Number  | `''`             | Button width                                                               |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述 | 返回值 |
-| -------- | -------- | ------ |
-| tap      | 按钮点击 | -      |
+| Event name | Event description | Value returned |
+| ---------- | ----------------- | -------------- |
+| `tap`      | Click of button   | -              |

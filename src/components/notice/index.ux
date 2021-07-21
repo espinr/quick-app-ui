@@ -73,7 +73,7 @@ export default {
       isMarqueeShow: false, //走马灯是否显示
       textStyle: {}, //文字的颜色
       bgStyle: {}, //通告栏背景颜色
-      iconColor: '#456FFF', //图标颜色
+      iconColor: '#456FFF', //Color
       leftMaskStyle: {}, //左侧mask的样式
       rightMaskStyle: {}, //右侧mask的样式
     }
@@ -107,7 +107,7 @@ export default {
       },
     },
     rightIconType: {
-      //接收用户传来的右侧图标类型
+      //接收用户传来的右侧Icon type
       type: String,
       default: 'close',
     },
@@ -182,7 +182,7 @@ export default {
         this.textStyle = {
           color: '#DB4F2B',
         }
-        //设置图标颜色
+        //设置Color
         this.iconColor = '#DB4F2B'
         //设置背景颜色
         this.bgStyle = {
@@ -218,7 +218,7 @@ export default {
         this.textStyle = {
           color: '#ffffff',
         }
-        //设置图标颜色
+        //设置Color
         this.iconColor = '#ffffff'
         //设置背景颜色
         this.bgStyle = {
@@ -250,7 +250,7 @@ export default {
         }
         break
       default:
-        //设置图标颜色
+        //设置Color
         this.iconColor = '#456FFF'
         //设置背景颜色
         this.bgStyle = {
@@ -283,7 +283,7 @@ export default {
         break
     }
   },
-  //根据用户传入的自定义颜色设置通告栏和文字的颜色，可覆盖type对应的默认样式
+  //根据用户传入的Custom Color设置通告栏和文字的颜色，可覆盖type对应的默认样式
   setColor() {
     if (this.textColor) {
       //设置文字颜色

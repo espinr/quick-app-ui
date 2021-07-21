@@ -16,15 +16,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut1 }}"
+          data="{{ dataDefault1 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut1 }}">
+          <block for="{{ dataDefault1 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -32,15 +32,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut2 }}"
+          data="{{ dataDefault2 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut2 }}">
+          <block for="{{ dataDefault2 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -48,15 +48,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut3 }}"
+          data="{{ dataDefault3 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut3 }}">
+          <block for="{{ dataDefault3 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -64,15 +64,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut4 }}"
+          data="{{ dataDefault4 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut4 }}">
+          <block for="{{ dataDefault4 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -82,15 +82,15 @@
           index="0"
           type="capsule"
           class="q-tabs"
-          data="{{ dataDefalut1 }}"
+          data="{{ dataDefault1 }}"
           active-color="#fff"
           background="#b3b3b3"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut1 }}">
+          <block for="{{ dataDefault1 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -98,15 +98,15 @@
           index="0"
           type="capsule"
           class="q-tabs"
-          data="{{ dataDefalut2 }}"
+          data="{{ dataDefault2 }}"
           active-color="#fff"
           background="#b3b3b3"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut2 }}">
+          <block for="{{ dataDefault2 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -114,15 +114,15 @@
           index="0"
           type="capsule"
           class="q-tabs"
-          data="{{ dataDefalut3 }}"
+          data="{{ dataDefault3 }}"
           active-color="#fff"
           background="#b3b3b3"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut3 }}">
+          <block for="{{ dataDefault3 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -132,14 +132,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut1 }}"
+          data="{{ dataDefault1 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut1 }}">
+          <block for="{{ dataDefault1 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -147,14 +147,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut2 }}"
+          data="{{ dataDefault2 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut2 }}">
+          <block for="{{ dataDefault2 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -162,14 +162,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut3 }}"
+          data="{{ dataDefault3 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut3 }}">
+          <block for="{{ dataDefault3 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -177,14 +177,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut4 }}"
+          data="{{ dataDefault4 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut4 }}">
+          <block for="{{ dataDefault4 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -215,28 +215,28 @@
 export default {
   data() {
     return {
-      dataDefalut1: [
-        { label: '标签一', describe: '描述一' },
-        { label: '标签二', describe: '描述二' },
+      dataDefault1: [
+        { label: 'Label 1', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' },
       ],
-      dataDefalut2: [
-        { label: '标签一', describe: '描述一' },
-        { label: '标签二', describe: '描述二' },
-        { label: '标签三', describe: '描述三' },
+      dataDefault2: [
+        { label: 'Label 1', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' },
+        { label: 'Label 3', describe: 'Description 3' },
       ],
-      dataDefalut3: [
-        { label: '标签一', describe: '描述一' },
-        { label: '标签二', describe: '描述二' },
-        { label: '标签三', describe: '描述三' },
-        { label: '标签四', describe: '描述四' },
-        { label: '标签五', describe: '描述五' },
+      dataDefault3: [
+        { label: 'Label 1', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' },
+        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 4', describe: 'Description 4' },
+        { label: 'Label 5', describe: 'Description 5' },
       ],
-      dataDefalut4: [
-        { label: '滑动标签', describe: '描述一' },
-        { label: '标签二', describe: '描述二' },
-        { label: '标签三', describe: '描述三' },
-        { label: '标签四', describe: '描述四' },
-        { label: '标签五', describe: '描述五' },
+      dataDefault4: [
+        { label: '滑动标签', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' },
+        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 4', describe: 'Description 4' },
+        { label: 'Label 5', describe: 'Description 5' },
       ],
       tabbarData: [
         {
@@ -249,13 +249,13 @@ export default {
           icon: 'qrcode',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '胶囊标签',
+          text: 'Products',
         },
         {
           icon: 'contact-fill',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '描述标签',
+          text: 'Contact',
         },
       ],
       index: 0,

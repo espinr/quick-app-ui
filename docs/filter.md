@@ -1,22 +1,22 @@
-## 筛选栏 filter
+## Filter Bar (`filter`)
 
-### 描述
+### Description
 
-用于对数据进行筛选。
+Component used to filter data.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/filter"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-filter" src="../../components/filter"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -29,16 +29,16 @@
       onselect-popup="handleSelectPopup"
     ></q-filter>
     <div style="flex-direction: column">
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
-      <text>文字文字文字</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
+      <text>Some text</text>
     </div>
   </div>
 </template>
@@ -50,221 +50,221 @@ export default {
     barOption: [
       {
         type: 'drawer',
-        label: '标题文字',
+        label: 'Title text',
         value: 'barValue1',
         select: 'radio',
         direction: 'column',
         children: [
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value1',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value2',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value3',
           },
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value4',
             size: 'large',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value5',
           },
         ],
       },
       {
         type: 'singleState',
-        label: '标题文字',
+        label: 'Title text',
         value: 'barValue2',
       },
       {
         type: 'sort',
-        label: '标题文字',
+        label: 'Title text',
         value: 'barValue3',
       },
     ],
     popupOption: [
       {
         type: 'radio',
-        label: '标题文字',
+        label: 'Title text',
         value: 'popupValue1',
         children: [
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value1',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value2',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value3',
           },
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value4',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value5',
           },
         ],
       },
       {
         type: 'checkbox',
-        label: '标题文字',
+        label: 'Title text',
         value: 'popupValue2',
         children: [
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value1',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value2',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value3',
           },
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value4',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value5',
           },
         ],
       },
       {
         type: 'checkbox',
-        label: '标题文字',
+        label: 'Title text',
         value: 'popupValue3',
         children: [
           {
             hasSecond: true,
-            firstLabel: '标题',
-            secondLabel: '辅助文字',
+            firstLabel: 'Subtitle',
+            secondLabel: 'Secondary text',
             value: 'value1',
           },
           {
             hasSecond: true,
-            firstLabel: '标题',
-            secondLabel: '辅助文字',
+            firstLabel: 'Subtitle',
+            secondLabel: 'Secondary text',
             value: 'value2',
           },
           {
             hasSecond: true,
-            firstLabel: '标题',
-            secondLabel: '辅助文字',
+            firstLabel: 'Subtitle',
+            secondLabel: 'Secondary text',
             value: 'value3',
           },
         ],
       },
       {
         type: 'range',
-        label: '标题文字',
+        label: 'Title text',
         value: 'popupValue3',
         leftRange: {
           default: '100',
-          placeholder: '可输入文字',
+          placeholder: 'Enter some text',
         },
         rightRange: {
           default: '',
-          placeholder: '可输入文字',
+          placeholder: 'Enter some text',
         },
       },
       {
         type: 'checkbox',
-        label: '标题文字',
+        label: 'Title text',
         value: 'popupValue3',
         canFold: true,
         isFolded: false,
         children: [
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value1',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value2',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value3',
           },
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value4',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value5',
           },
         ],
       },
       {
         type: 'checkbox',
-        label: '标题文字',
+        label: 'Title text',
         value: 'popupValue3',
         canFold: true,
         isFolded: true,
         children: [
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value1',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value2',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value3',
           },
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value4',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value5',
           },
         ],
       },
       {
         type: 'checkbox',
-        label: '标题文字',
+        label: 'Title text',
         value: 'popupValue3',
         canFold: true,
         isFolded: true,
         children: [
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value1',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value2',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value3',
           },
           {
-            label: '描述文字描述文字',
+            label: 'Description Text',
             value: 'value4',
           },
           {
-            label: '描述文字',
+            label: 'Description Text',
             value: 'value5',
           },
         ],
@@ -275,11 +275,11 @@ export default {
   },
 
   handleSelectBar(e) {
-    console.log('选中的项为：', e.detail.barResult)
+    console.log('The selected items are:', e.detail.barResult)
   },
 
   handleSelectPopup(e) {
-    console.log('选中的项为：', e.detail.popupResult)
+    console.log('The selected items are:', e.detail.popupResult)
   },
 }
 ```
@@ -292,50 +292,50 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性           | 类型    | 默认值 | 说明             |
-| -------------- | ------- | ------ | ---------------- |
-| barOption      | Array   | []     | 顶部筛选栏配置项 |
-| popupOption    | Array   | []     | 筛选弹出框配置项 |
-| showFilterIcon | Boolean | true   | 是否显示筛选按钮 |
+| Attribute        | Type    | Value by default | Description                   |
+| ---------------- | ------- | ---------------- | ----------------------------- |
+| `barOption`      | Array   | `[]`             | Top filter bar setup items    |
+| `popupOption`    | Array   | `[]`             | Filter dialog box setup items |
+| `showFilterIcon` | Boolean | `true`           | Display the filter button     |
 
-#### bar-option 属性
+#### bar-option Attributes
 
-| 属性           | 类型   | 默认值  | 说明                                                                       |
-| -------------- | ------ | ------- | -------------------------------------------------------------------------- |
-| type           | String | ''      | 筛选项类型，可为 drawer,singleState,sort                                   |
-| label          | String | ''      | 筛选项描述                                                                 |
-| value          | String | ''      | 筛选项值                                                                   |
-| select         | String | ''      | drawer 内的项是单选还是多选,只有 type 为 drawer 时生效                     |
-| direction      | String | ''      | drawer 内子项的排列方式，可选值为 column 和 row,只有 type 为 drawer 时生效 |
-| children       | Array  | []      | 子元素,只有 type 为 drawer 时生效                                          |
-| children.label | String | ''      | 子元素的描述                                                               |
-| children.value | String | ''      | 子元素的值                                                                 |
-| children.size  | String | 'small' | 子元素的尺寸，可选值包括 small、middle、large                              |
+| Attribute        | Type   | Value by default | Description                                                                                                                                 |
+| ---------------- | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`           | String | `''`             | Filter item type. Values can be: `drawer`, `singleState`, `sort`                                                                            |
+| `label`          | String | `''`             | Description of the filter item                                                                                                              |
+| `value`          | String | `''`             | Value of the filter item                                                                                                                    |
+| `select`         | String | `''`             | Indicates whether to select one or multiple items in a drawer. This parameter is valid only when `type` is set to `drawer`.                 |
+| `direction`      | String | `''`             | Arrangement mode of subitems in a drawer. The options are: `column` and `row`. This parameter is valid only when `type` is set to `drawer`. |
+| `children`       | Array  | `[]`             | Children. This parameter is valid only when type is set to `drawer`.                                                                        |
+| `children.label` | String | `''`             | Description of the child element                                                                                                            |
+| `children.value` | String | `''`             | Value of the child element                                                                                                                  |
+| `children.size`  | String | `'small'`        | Size of a child element. The options are `small`, `middle`, and `large`.                                                                    |
 
-#### popup-option 属性
+#### popup-option Attributes
 
-| 属性                   | 类型    | 默认值 | 说明                                    |
-| ---------------------- | ------- | ------ | --------------------------------------- |
-| type                   | String  | ''     | 筛选项类型，可为 radio、checkbox、range |
-| label                  | String  | ''     | 筛选项描述                              |
-| value                  | String  | ''     | 筛选项值                                |
-| canFold                | Boolean | false  | 该筛选项是否可折叠                      |
-| isFolded               | Boolean | false  | 该筛选项是否已为折叠状态                |
-| children               | Array   | []     | 子元素                                  |
-| children.label         | String  | ''     | 子元素的描述                            |
-| children.value         | String  | ''     | 子元素的值                              |
-| leftRange              | Object  | {}     | 左输入框配置，type 为 range 时生效      |
-| leftRange.default      | String  | ''     | 左输入框默认值                          |
-| leftRange.placeholder  | String  | ''     | 左输入框 placeholder                    |
-| rightRange             | Object  | {}     | 右输入框配置，type 为 range 时生效      |
-| rightRange.default     | String  | ''     | 右输入框默认值                          |
-| rightRange.placeholder | String  | ''     | 右输入框 placeholder                    |
+| Attribute                | Type    | Value by default | Description                                                                               |
+| ------------------------ | ------- | ---------------- | ----------------------------------------------------------------------------------------- |
+| `type`                   | String  | `''`             | Filter item type. The options are: `radio`, `checkbox`, and `range`.                      |
+| `label`                  | String  | `''`             | Description of the filter item                                                            |
+| `value`                  | String  | `''`             | Value of the filter item                                                                  |
+| `canFold`                | Boolean | `false`          | Whether the filter item is collapsible or not                                             |
+| `isFolded`               | Boolean | `false`          | Check whether the filter item is collapsed                                                |
+| `children`               | Array   | `[]`             | Children elements                                                                         |
+| `children.label`         | String  | `''`             | Description of the child element                                                          |
+| `children.value`         | String  | `''`             | Value of the child element                                                                |
+| `leftRange`              | Object  | `{}`             | Left text box configuration. This parameter is valid only when `type` is set to `range`.  |
+| `leftRange.default`      | String  | `''`             | Default value of the left text box                                                        |
+| `leftRange.placeholder`  | String  | `''`             | Placeholder of the left text box                                                          |
+| `rightRange`             | Object  | `{}`             | Right text box configuration. This parameter is valid only when `type` is set to `range`. |
+| `rightRange.default`     | String  | `''`             | Default value of the right text box                                                       |
+| `rightRange.placeholder` | String  | `''`             | Placeholder text of the right text box                                                    |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称    | 事件描述                   | 返回值            |
-| ----------- | -------------------------- | ----------------- |
-| selectBar   | 顶部筛选栏选中事件         | {value:value}     |
-| selectPopup | 弹出搜索框确定按钮点击事件 | [ {value:value} ] |
+| Event name    | Event description                        | Value returned      |
+| ------------- | ---------------------------------------- | ------------------- |
+| `selectBar`   | Selection in the filter bar              | `{value:value}`     |
+| `selectPopup` | Clicked the OK button in the search box. | `[ {value:value} ]` |

@@ -1,35 +1,35 @@
-## 滑动条 slider
+## Slider Bar (`slider`)
 
-### 描述
+### Description
 
-用于在一个区间内选择特定值。
+Component to select a specific value within a range of values.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/slider"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-slider" src="qaui/src/components/slider/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
-    <text class="title">设置-step</text>
+    <text class="title">Set Step</text>
     <q-slider step="2" value="50"></q-slider>
-    <text class="title">设置最小/最大值</text>
+    <text class="title">Set Min/Max</text>
     <q-slider min="10" max="20" value="12" show-value="true"></q-slider>
-    <text class="title">显示当前值</text>
+    <text class="title">Show Current Values</text>
     <q-slider show-value="true" value="66"></q-slider>
-    <text class="title">自定义样式</text>
+    <text class="title">Custom Styles</text>
     <q-slider color="#FFCC57" value="55"></q-slider>
-    <text class="title">带节点样式</text>
+    <text class="title">With Dot</text>
     <q-slider dot="true" step="20" value="40"></q-slider>
     <q-slider
       dot="true"
@@ -56,23 +56,23 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性          | 类型    | 默认值    | 说明                           |
-| ------------- | ------- | --------- | ------------------------------ |
-| min           | Number  | 0         | 滑动条最小值                   |
-| max           | Number  | 100       | 滑动条最大值                   |
-| step          | Number  | 1         | 步长，必须大于 0               |
-| value         | Number  | 0         | 滑动条当前值                   |
-| showValue     | Boolean | false     | 是否显示滑动条值               |
-| color         | String  | '#F2F2F2' | 滑动条颜色                     |
-| selectedColor | String  | '#456FFF' | 滑动条划过的颜色               |
-| dot           | Boolean | false     | 是否显示节点                   |
-| leftIcon      | String  | ''        | 左边 icon 的路径, 支持网络图片 |
-| rightIcon     | String  | ''        | 右边 icon 的路径, 支持网络图片 |
+| Attribute       | Type    | Value by default | Description                                              |
+| --------------- | ------- | ---------------- | -------------------------------------------------------- |
+| `min`           | Number  | `0`              | Minimum value                                            |
+| `max`           | Number  | `100`            | Maximum value                                            |
+| `step`          | Number  | `1`              | Step, which must be greater than `0`                     |
+| `value`         | Number  | `0`              | Current value of the slider                              |
+| `showValue`     | Boolean | `false`          | Indicates whether to display the slider bar value or not |
+| `color`         | String  | `'#F2F2F2'`      | Color of the slide bar                                   |
+| `selectedColor` | String  | `'#456FFF'`      | Color of the slide bar                                   |
+| `dot`           | Boolean | `false`          | Indicates whether to display dots                        |
+| `leftIcon`      | String  | `''`             | URL or path of the icon on the left                      |
+| `rightIcon`     | String  | `''`             | URL or path of the icon on the right                     |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述         | 返回值              |
-| -------- | ---------------- | ------------------- |
-| change   | 滑动条值改变事件 | {progress:progress} |
+| Event name | Event description   | Value returned        |
+| ---------- | ------------------- | --------------------- |
+| `change`   | Slider value change | `{progress:progress}` |

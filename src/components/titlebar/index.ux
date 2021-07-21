@@ -43,7 +43,7 @@ export default {
       default: '',
     },
     placeholder: {
-      default: '搜索',
+      default: 'Search',
     },
   },
   goSearch() {

@@ -30,26 +30,26 @@ export default {
       list: [
         {
           id: 1,
-          value: '多选项1',
+          value: 'Option 1',
           checked: true,
         },
         {
           id: 2,
-          value: '多选项2',
+          value: 'Option 2',
           checked: true,
           disabled: true,
         },
         {
           id: 3,
-          value: '多选项3',
+          value: 'Option 3',
         },
         {
           id: 4,
-          value: '多选项4',
+          value: 'Option 4',
           disabled: true,
         },
       ],
-      current: ['多选项2', '多选项1'],
+      current: ['Option 2', 'Option 1'],
     }
   },
   handleChange({ detail }) {

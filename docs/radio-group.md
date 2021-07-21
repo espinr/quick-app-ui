@@ -1,16 +1,16 @@
-## 单选按钮组 radio-group
+## Radio Group (`radio-group`)
 
-### 描述
+### Description
 
-用于给表单中的单选框分组，提供了多个相关单选框的操作方法。需要配合`radio`使用。
+It is used to group radio buttons in the form, and provides multiple operation methods for related radio buttons. Used with `radio`.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/radio.jpg" alt="barcode" style="width:300px" /></div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import
@@ -19,12 +19,12 @@
 ></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
-    <text class="title">default样式</text>
+    <text class="title">Default style</text>
     <q-radio-group id="myGroup1" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup1"
@@ -33,7 +33,7 @@
         checked="{{$item.checked}}"
       ></q-radio>
     </q-radio-group>
-    <text class="title">list样式</text>
+    <text class="title">list style</text>
     <q-radio-group id="myGroup2" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup2"
@@ -43,7 +43,7 @@
         checked="{{$item.checked}}"
       ></q-radio>
     </q-radio-group>
-    <text class="title">dot样式</text>
+    <text class="title">dot style</text>
     <q-radio-group id="myGroup3" current="{{current}}" onchange="handleChange">
       <q-radio
         group="myGroup3"
@@ -64,19 +64,19 @@ export default {
       list: [
         {
           id: 1,
-          value: '单选项1',
+          value: 'Single option #1',
         },
         {
           id: 2,
-          value: '单选项2',
+          value: 'Single option #2',
           checked: true,
         },
         {
           id: 3,
-          value: '单选项3',
+          value: 'Single option #3',
         },
       ],
-      current: '单选项2',
+      current: 'Single option #2',
     }
   },
   handleChange({ detail }) {
@@ -102,15 +102,15 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性    | 类型   | 默认值 | 说明                            |
-| ------- | ------ | ------ | ------------------------------- |
-| current | String | -      | 默认处于选中状态的 radio 的值   |
-| id      | String | -      | 组的 id，用于区分不同组，必填项 |
+| Attribute | Type   | Value by default | Description                                                               |
+| --------- | ------ | ---------------- | ------------------------------------------------------------------------- |
+| `current` | String | -                | Value of the selected `radio`                                             |
+| `id`      | String | -                | The `id` of the group, which is used to differentiate groups (mandatory). |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述         | 返回值                         |
-| -------- | ---------------- | ------------------------------ |
-| change   | 值发生变化的事件 | {current:current, value:value} |
+| Event name | Event description | Value returned                   |
+| ---------- | ----------------- | -------------------------------- |
+| `change`   | Change of value   | `{current:current, value:value}` |

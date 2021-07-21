@@ -4,7 +4,7 @@
   <div class="qaui-wrap">
     <q-desktop
       description="{{ description }}"
-      btn-text="添加"
+      btn-text="Add"
       icon="qrcode-fill"
       icon-src="{{ iconSrc }}"
       onclose="handClose"
@@ -22,7 +22,7 @@ export default {
   props: {},
   data() {
     return {
-      description: '添加到桌面，描述文字描述',
+      description: 'Add to Home Screen，Description Text描述',
       background: '#fff',
       activeColor: '#456FFF',
       textColor: '#B2B2B2',

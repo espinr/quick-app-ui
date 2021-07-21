@@ -1,33 +1,33 @@
-## 多行输入框 textarea
+## Textbox (`textarea`)
 
-### 描述
+### Description
 
-多行输入框，用于输入多行文本。
+Multi-line text box, which is used to enter multiple of text.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/textarea"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-textarea" src="qaui/src/components/textarea/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
   <div class="qaui-wrap">
-    <text class="title">默认用法</text>
+    <text class="title">Usage by Default</text>
     <q-textarea></q-textarea>
-    <text class="title">自定义用法</text>
+    <text class="title">Custom Usage</text>
     <q-textarea
-      placeholder="请输入您的意见！"
+      placeholder="Please enter your comments!"
       maxlength="50"
-      default-value="快应用真快"
+      default-value="Quick App is quick"
       focus="true"
     ></q-textarea>
   </div>
@@ -48,19 +48,19 @@
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性         | 类型    | 默认值 | 说明                     |
-| ------------ | ------- | ------ | ------------------------ |
-| defaultValue | String  | ''     | 内容默认值               |
-| placeholder  | String  | ''     | 占位提示文字             |
-| focus        | Boolean | false  | 自动获取焦点，拉起输入法 |
-| maxlength    | Number  | 140    | 最大输入长度             |
+| Attribute      | Type    | Value by default | Description                 |
+| -------------- | ------- | ---------------- | --------------------------- |
+| `defaultValue` | String  | `''`             | Content value by default    |
+| `placeholder`  | String  | `''`             | Content placeholder         |
+| `focus`        | Boolean | `false`          | Automatically get the focus |
+| `maxlength`    | Number  | `140`            | Maximum input length        |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述           | 返回值 |
-| -------- | ------------------ | ------ |
-| change   | 值发生变化的事件   | event  |
-| focus    | 输入框获得焦点事件 | event  |
-| blur     | 输入框失去焦点事件 | event  |
+| Event name | Event description | Value returned |
+| ---------- | ----------------- | -------------- |
+| `change`   | Change of value   | `event`        |
+| `focus`    | Get focus         | `event`        |
+| `blur`     | Lost focus        | `event`        |

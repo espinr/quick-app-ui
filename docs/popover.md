@@ -1,22 +1,22 @@
-## 气泡菜单 popover
+## Popover (`popover`)
 
-### 描述
+### Description
 
-点击元素，弹出气泡式菜单。
+Click the element to pop up a bubble menu.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/popover/"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-popover" src="qaui/src/components/popover/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -169,18 +169,18 @@ export default {
     return {
       contents: [
         {
-          content: '描述内容',
+          content: 'Description',
           iconPath: '/common/images/default_black.png',
         },
         {
-          content: '描述内容',
+          content: 'Description',
           icon: {
             type: 'category-fill',
             color: '#456FFF',
           },
         },
         {
-          content: '描述内容',
+          content: 'Description',
         },
       ],
       placementArr: [
@@ -256,33 +256,33 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性         | 类型   | 默认值   | 说明                                                                                                                                                                                  |
-| ------------ | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| popoverWidth | Number | 0        | 自定义气泡菜单宽度(必填)                                                                                                                                                              |
-| contents     | Array  | []       | 气泡菜单内容数组，数组每一项为一个对象，对象的具体说明见下方文档                                                                                                                      |
-| placement    | String | 'bottom' | 箭头出现位置，可选值有: 'top' \| 'topLeft' \| 'topRight' \| 'bottom' \| 'bottomLeft' \| 'bottomRight' \| 'left' \| 'leftTop' \| 'leftBottom' \| 'right' \| 'rightTop' \|'rightBottom' |
-| offset       | Array  | [0, 0]   | 气泡菜单在水平和垂直方向的偏移量                                                                                                                                                      |
-| arrowSpace   | Number | 10       | 当箭头位置不为 'top' \| 'left' \| 'right' \| 'bottom' 时箭头离所在边界的距离（自定义值需大于 10）                                                                                     |
-| triggerSize  | Array  | []       | 用户通过 slot 自定义的组件的宽高（必填，而且须根据自己定义的宽高准确填入）                                                                                                            |
+| Attribute      | Type   | Value by default | Description                                                                                                                                                                                                                                |
+| -------------- | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `popoverWidth` | Number | `0`              | Popover width (mandatory)                                                                                                                                                                                                                  |
+| `contents`     | Array  | `[]`             | Array with the content of the popover. Each item in the array is an object described as shown below.                                                                                                                                       |
+| `placement`    | String | `'bottom'`       | Position of the arrow. The options are as follows:: `'top'` \| `'topLeft'` \| `'topRight'` \| `'bottom'` \| `'bottomLeft'` \| `'bottomRight'` \| `'left'` \| `'leftTop'` \| `'leftBottom'` \| `'right'` \| `'rightTop'` \| `'rightBottom'` |
+| `offset`       | Array  | `[0, 0]`         | Horizontal and vertical offsets of the menu                                                                                                                                                                                                |
+| `arrowSpace`   | Number | `10`             | Distance between the arrow and the boundary. When the position of the arrow is different than `'top'` \| `'left'` \| `'right'` \| `'bottom'` the distance must be greater than `10`）                                                      |
+| `triggerSize`  | Array  | `[]`             | Width and height of a component defined by a user through a `slot` (mandatory)                                                                                                                                                             |
 
-contents 属性数组每一项具体说明
+#### Attributes of `contents` objects
 
-| 属性     | 类型   | 说明                                                                           |
-| -------- | ------ | ------------------------------------------------------------------------------ |
-| content  | String | 菜单栏每一行的内容                                                             |
-| iconPath | String | 菜单栏每一行的图标路径，iconPath 和 icon 只需填写一个，如都填写，优先使用 icon |
-| icon     | Object | 组件库中 icon 组件配置项，目前只支持 type 和 color 两个属性                    |
+| Attribute  | Type   | Description                                                                                                                         |
+| ---------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `content`  | String | Content of each line on the menu                                                                                                    |
+| `iconPath` | String | Icon path of each line on the menu. You only need to set either `iconPath` or `icon`. If both are set, `icon` is selected.          |
+| `icon`     | Object | Configuration item of the icon component in the component library. Currently, only the `type` and `color` attributes are supported. |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称    | 事件描述       | 返回值         |
-| ----------- | -------------- | -------------- |
-| menuItemTap | 点击菜单栏触发 | (event, index) |
+| Event name    | Event description         | Value returned   |
+| ------------- | ------------------------- | ---------------- |
+| `menuItemTap` | Popover menu item clicked | `(event, index)` |
 
 #### slot
 
-| 名称    | 描述                           |
-| ------- | ------------------------------ |
-| trigger | 自定义触发气泡菜单的组件，必填 |
+| Name      | Description                                                           |
+| --------- | --------------------------------------------------------------------- |
+| `trigger` | Component that triggers the bubble menu. This parameter is mandatory. |

@@ -1,32 +1,34 @@
-## 快速上手
+## Get Started
 
-### 快速预览
+### Quick Preview
 
-使用`浏览器`或者`快应用调试器`扫码快速预览组件库效果：
+Use Browser or Quick Application Debugger (Android app) to scan the code to preview the component library effect.
 
 <div style="text-align: center;margin: 40px;"><img src="./assets/qrcode.png" alt="barcode" style="width:300px" /></div>
 
-### 使用组件库
+### Using the Component Library
 
-使用下面两种方式均可安装组件库到项目依赖中。
+Use either of the following methods to install component libraries to project dependencies:
 
 ```sh
-npm install qaui --save  # 使用npm
-yarn add qaui # 使用yarn
+npm install qui --save  # Use npm
+yarn add qui            # Use yarn
 ```
 
-组件库使用了 less 来开发，所以你还需要安装对应依赖。
+The component library is developed using less, so you need to install the corresponding dependency.
 
 ```shell script
 npm install less less-loader --save-dev
+` ` `
+
+::: Danger Strong Prompt
+The component library designWidth is developed based on 360-degree. To adapt to different designWidths, you need to modify the @ratio variable in the `qaui/src/components/common.less` file.
+
+The default @ratio value of the current component library is 750/360. If the designWidth value of your app is 360, change @ratio to 360/360.
+::
+
+### Feedback Communication
+
+If you have any problems using the component library, please contact us at `github`.
+
 ```
-
-::: danger 强烈提示
-组件库 designWidth 基于 360 开发，为了适配不同的 designWidth，你需要修改文件`qaui/src/components/common.less`中的@ratio 变量。
-
-当前组件库默认@ratio 为 750/360，如果你的快应用 designWidth 为 360，则应该修改@ratio 为 360/360。
-:::
-
-### 反馈交流
-
-你在使用组件库的过程中遇到任何问题，欢迎在`github`上给我们提 issue。

@@ -1,15 +1,15 @@
 <import name="q-slider" src="../../components/slider/index"></import>
 <template>
   <div class="qaui-wrap">
-    <text class="title">设置-step</text>
+    <text class="title">Set Step</text>
     <q-slider step="2" value="50"></q-slider>
-    <text class="title">设置最小/最大值</text>
+    <text class="title">Set Min/Max</text>
     <q-slider min="10" max="20" value="12" show-value="true"></q-slider>
-    <text class="title">显示当前值</text>
+    <text class="title">Show Current Values</text>
     <q-slider show-value="true" value="66"></q-slider>
-    <text class="title">自定义样式</text>
+    <text class="title">Custom Styles</text>
     <q-slider color="#FFCC57" value="55"></q-slider>
-    <text class="title">带节点样式</text>
+    <text class="title">With Dot</text>
     <q-slider dot="true" step="20" value="40"></q-slider>
     <q-slider
       dot="true"

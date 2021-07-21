@@ -1,22 +1,22 @@
-## 输入框 input
+## Text Input (`input`)
 
-### 描述
+### Description
 
-用于各类业务逻辑场景的用户输入文本的组件。
+This component is used for text input.
 
-### 使用效果
+### Usage result
 
 <preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/input"/>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-input" src="qaui/src/components/input/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -26,22 +26,26 @@
       onblur="blurHandler"
       onclear="clearHandler"
     ></q-input>
-    <q-input title="姓名" value="快应用" focus="true"></q-input>
-    <q-input title="电子邮箱"></q-input>
-    <q-input title="超长的家庭地址"></q-input>
+    <q-input title="Full Name" value="Quick App" focus="true"></q-input>
+    <q-input title="Email"></q-input>
+    <q-input title="Postal Address"></q-input>
     <q-input
-      title="我的表头"
+      title="Header"
       icon-right-a="/common/logo.png"
       ontap="tapHandler"
     ></q-input>
     <q-input
-      title="很长的表头"
+      title="Long Header"
       icon-left="/common/logo.png"
       icon-right-a="/common/logo.png"
     ></q-input>
     <q-input type="border"></q-input>
-    <q-input type="border" value="正在输入内容" button="发送"></q-input>
-    <q-input icon-left="/common/logo.png" type="border" button="发送"></q-input>
+    <q-input type="border" value="Add Content" button="Submit"></q-input>
+    <q-input
+      icon-left="/common/logo.png"
+      type="border"
+      button="Submit"
+    ></q-input>
     <q-input
       icon-left="/common/logo.png"
       type="border"
@@ -52,7 +56,7 @@
       icon-left="/common/logo.png"
       type="border"
       icon-right-a="/common/logo.png"
-      button="发送"
+      button="Submit"
     ></q-input>
   </div>
 </template>
@@ -64,10 +68,10 @@ export default {
     console.log(detail)
   },
   blurHandler({ detail }) {
-    console.log('失去焦点！', detail)
+    console.log('Focus lost!', detail)
   },
   clearHandler({ detail }) {
-    console.log('清空输入！', detail)
+    console.log('Clear the input!', detail)
   },
   tapHandler({ detail }) {
     console.log(detail)
@@ -85,27 +89,27 @@ export default {
 
 ### API
 
-#### 组件属性
+#### Component Properties
 
-| 属性        | 类型    | 默认值     | 说明                                            |
-| ----------- | ------- | ---------- | ----------------------------------------------- |
-| type        | String  | 'default'  | 输入框样式类型，可选值有 'default', 'border'    |
-| title       | String  | ''         | 输入框名称                                      |
-| value       | String  | ''         | 输入框默认值                                    |
-| focus       | Boolean | false      | 输入框是否默认获得焦点                          |
-| maxlength   | Number  | 20         | 输入框最大字符数量限制                          |
-| placeholder | String  | '输入内容' | 输入框提示语                                    |
-| button      | String  | ''         | 输入框右边文字按钮文字，限两个字                |
-| iconLeft    | String  | ''         | 输入框左边图标按钮路径                          |
-| iconRightA  | String  | ''         | 输入框右边 A 图标按钮路径                       |
-| iconRightB  | String  | ''         | 输入框右边 B 图标按钮路径，当有文字按钮时不显示 |
+| Attribute     | Type    | Value by default  | Description                                                                                        |
+| ------------- | ------- | ----------------- | -------------------------------------------------------------------------------------------------- |
+| `type`        | String  | `'default'`       | Type of the text box style. The options are: `'default'` and `'border'`                            |
+| `title`       | String  | `''`              | Name of the text box                                                                               |
+| `value`       | String  | `''`              | Default value of the text box                                                                      |
+| `focus`       | Boolean | `false`           | Indicates whether the text box gets the focus                                                      |
+| `maxlength`   | Number  | `20`              | Maximum number of characters in the text box                                                       |
+| `placeholder` | String  | `'Enter content'` | Text box placeholder content                                                                       |
+| `button`      | String  | `''`              | Button with text on the right of the input box. The value can contain a maximum of two characters. |
+| `iconLeft`    | String  | `''`              | Path of the icon to be shown in a button on the left of the text box                               |
+| `iconRightA`  | String  | `''`              | Path of the A icon button on the right of the text box                                             |
+| `iconRightB`  | String  | `''`              | Path of the B icon button on the right of the text box                                             |
 
-#### 组件事件
+#### Component Events
 
-| 事件名称 | 事件描述           | 返回值                                                      |
-| -------- | ------------------ | ----------------------------------------------------------- |
-| tap      | 组件上点击事件     | {position:position,event:event} position 值为对应按钮属性名 |
-| change   | 输入框值变化事件   | {value:value}                                               |
-| focus    | 输入框获得焦点事件 | {value:value}                                               |
-| blur     | 输入框失去焦点事件 | {value:value}                                               |
-| clear    | 输入框清空内容事件 | -                                                           |
+| Event name | Event description            | Value returned                                                                                  |
+| ---------- | ---------------------------- | ----------------------------------------------------------------------------------------------- |
+| `tap`      | Click on the component       | `{position:position,event:event}` (The value of `position` is the corresponding `button` value) |
+| `change`   | Change of value in the input | `{value:value}`                                                                                 |
+| `focus`    | Get focus                    | `{value:value}`                                                                                 |
+| `blur`     | Lost focus                   | `{value:value}`                                                                                 |
+| `clear`    | Input text cleared           | -                                                                                               |

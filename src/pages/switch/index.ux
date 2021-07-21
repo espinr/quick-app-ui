@@ -3,19 +3,19 @@
   <div class="qaui-wrap">
     <div class="row">
       <q-switch value="true"></q-switch>
-      <text>常规-开</text>
+      <text>Normal - On</text>
     </div>
     <div class="row">
       <q-switch></q-switch>
-      <text>常规-关</text>
+      <text>Normal - Off</text>
     </div>
     <div class="row">
       <q-switch value="true" disabled="true"></q-switch>
-      <text>不可点击-开</text>
+      <text>Not Clickable - On</text>
     </div>
     <div class="row">
       <q-switch disabled="true"></q-switch>
-      <text>不可点击-关</text>
+      <text>Not Clickable - Off</text>
     </div>
   </div>
 </template>

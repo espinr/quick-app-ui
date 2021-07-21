@@ -1,10 +1,10 @@
-## 横向选项卡 tabs
+## Horizontal Tabs (`tabs`)
 
-### 描述
+### Description
 
-横向选项卡 tabs，切换操作
+Tabs (in the same row) to switch actions and access different pages.
 
-### 使用效果
+### Usage result
 
 <div style="text-align: center;margin: 40px;">
     <img src="./assets/tabs-a.png" alt="tabs" style="width:300px" />
@@ -12,16 +12,16 @@
     <img src="./assets/tabs-c.png" alt="tabs" style="width:300px" />
 </div>
 
-### 使用方法
+### How to use it
 
-在`.ux`文件中引入组件
+Importing a component in a `.ux` file:
 
 ```html
 <import name="q-tabbar" src="qaui/src/components/tabbar/index"></import>
 <import name="q-tabs" src="qaui/src/components/tabs/index"></import>
 ```
 
-### 示例
+### Example
 
 ```html
 <template>
@@ -40,15 +40,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut1 }}"
+          data="{{ dataDefault1 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut1 }}">
+          <block for="{{ dataDefault1 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -56,15 +56,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut2 }}"
+          data="{{ dataDefault2 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut2 }}">
+          <block for="{{ dataDefault2 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -72,15 +72,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut3 }}"
+          data="{{ dataDefault3 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut3 }}">
+          <block for="{{ dataDefault3 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -88,15 +88,15 @@
           index="0"
           type="default"
           class="q-tabs"
-          data="{{ dataDefalut4 }}"
+          data="{{ dataDefault4 }}"
           active-color="#456fff"
           background="#FFF"
           active-background="#FFF"
           ontap="tap"
         >
-          <block for="{{ dataDefalut4 }}">
+          <block for="{{ dataDefault4 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -106,15 +106,15 @@
           index="0"
           type="capsule"
           class="q-tabs"
-          data="{{ dataDefalut1 }}"
+          data="{{ dataDefault1 }}"
           active-color="#fff"
           background="#b3b3b3"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut1 }}">
+          <block for="{{ dataDefault1 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -122,15 +122,15 @@
           index="0"
           type="capsule"
           class="q-tabs"
-          data="{{ dataDefalut2 }}"
+          data="{{ dataDefault2 }}"
           active-color="#fff"
           background="#b3b3b3"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut2 }}">
+          <block for="{{ dataDefault2 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -138,15 +138,15 @@
           index="0"
           type="capsule"
           class="q-tabs"
-          data="{{ dataDefalut3 }}"
+          data="{{ dataDefault3 }}"
           active-color="#fff"
           background="#b3b3b3"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut3 }}">
+          <block for="{{ dataDefault3 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -156,14 +156,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut1 }}"
+          data="{{ dataDefault1 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut1 }}">
+          <block for="{{ dataDefault1 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -171,14 +171,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut2 }}"
+          data="{{ dataDefault2 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut2 }}">
+          <block for="{{ dataDefault2 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -186,14 +186,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut3 }}"
+          data="{{ dataDefault3 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut3 }}">
+          <block for="{{ dataDefault3 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -201,14 +201,14 @@
           index="0"
           type="desc"
           class="q-tabs"
-          data="{{ dataDefalut4 }}"
+          data="{{ dataDefault4 }}"
           active-color="#456fff"
           active-background="#456fff"
           ontap="tap"
         >
-          <block for="{{ dataDefalut4 }}">
+          <block for="{{ dataDefault4 }}">
             <div class="item-content">
-              <text>标签{{ $idx + 1 }}内容</text>
+              <text>Tab#{{ $idx + 1 }} Content</text>
             </div>
           </block>
         </q-tabs>
@@ -244,42 +244,42 @@
 export default {
   data() {
     return {
-      dataDefalut1: [
-        { label: '标签一', describe: '描述一' },
-        { label: '标签二', describe: '描述二' }],
-      dataDefalut2: [
-        { label: '标签一', describe: '描述一' },
-        { label: '标签二', describe: '描述二' },
-        { label: '标签三', describe: '描述三' }],
-      dataDefalut3: [
-        { label: '标签一', describe: '描述一' },
-        { label: '标签二', describe: '描述二' },
-        { label: '标签三', describe: '描述三' },
-        { label: '标签四', describe: '描述四' }],
-      dataDefalut4: [
-        { label: '滑动标签', describe: '描述一' },
-        { label: '标签二', describe: '描述二' },
-        { label: '标签三', describe: '描述三' },
-        { label: '标签四', describe: '描述四' },
-        { label: '标签五', describe: '描述五' }],
+      dataDefault1: [
+        { label: 'Label 1', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' }],
+      dataDefault2: [
+        { label: 'Label 1', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' },
+        { label: 'Label 3', describe: 'Description 3' }],
+      dataDefault3: [
+        { label: 'Label 1', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' },
+        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 4', describe: 'Description 4' }],
+      dataDefault4: [
+        { label: 'Label 1', describe: 'Description 1' },
+        { label: 'Label 2', describe: 'Description 2' },
+        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 4', describe: 'Description 4' },
+        { label: 'Label 5', describe: 'Description 5' }],
       tabbarData: [
         {
           icon: 'homepage',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '普通标签',
+          text: 'Home',
         },
         {
           icon: 'qrcode',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '胶囊标签',
+          text: 'Products',
         },
         {
           icon: 'contact-fill',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '描述标签',
+          text: 'Contact',
         },
       ],
       index: 0,
@@ -300,26 +300,26 @@ export default {
 </script>
 ```
 
-### 组件属性
+### Component Properties
 
-| 属性             | 类型   | 默认值    | 说明                                                                                                                        |
-| ---------------- | ------ | --------- | --------------------------------------------------------------------------------------------------------------------------- |
-| index            | String | '0'       | 当前选中标签的索引,默认为 0                                                                                                 |
-| type             | String | 'default' | 标签类型,必填. 可选值有 'default , capsule , desc'                                                                          |
-| activeColor      | String | '#456FFF' | 激活时标签的文字颜色                                                                                                        |
-| background       | String | '#fff'    | 标签背景颜色                                                                                                                |
-| activeBackground | String | '#fff'    | 激活时标签背景颜色(当 `type=desc` 时，指描述内容背景颜色)                                                                   |
-| data             | Array  | [ ]       | data 数据对象数组，对象数据结构见下表。注意：普通标签超过 4 个,可滑动，胶囊标签超过 3 个，可滑动。描述标签超过 4 个，可滑动 |
+| Attribute          | Type   | Value by default | Description                                                                                                      |
+| ------------------ | ------ | ---------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `index`            | String | `'0'`            | Index of the selected label. The default value is `0`.                                                           |
+| `type`             | String | `'default'`      | Tag type (mandatory). The options are `default`, `capsule`, and `desc`.                                          |
+| `activeColor`      | String | `'#456FFF'`      | Text color of the active label                                                                                   |
+| `background`       | String | `'#fff'`         | Label background color                                                                                           |
+| `activeBackground` | String | `'#fff'`         | Background color of the active label. (When `type=desc` this refers to the background color of the description.) |
+| `data`             | Array  | `[ ]`            | Array of data objects. The object data structure is defined in the following table.                              |
 
-data 内对象的属性说明
+#### `data` Object Attributes
 
-| 属性     | 类型   | 默认值 | 说明                                    |
-| :------- | :----- | :----- | :-------------------------------------- |
-| label    | String | -      | 标签文字，必填                          |
-| describe | String | -      | 标签描述文字，仅当`type为capsule`时有效 |
+| Attribute  | Type   | Value by default | Description                                                                                  |
+| :--------- | :----- | :--------------- | :------------------------------------------------------------------------------------------- |
+| `label`    | String | -                | Label content (mandatory)                                                                    |
+| `describe` | String | -                | Description text of the label. This parameter is valid only when `type` is set to `capsule`. |
 
-### 组件事件
+### Component Events
 
-| 事件名称 | 事件描述       | 返回值                              |
-| -------- | -------------- | ----------------------------------- |
-| tap      | 切换标签时触发 | {detail：{index: 当前点击项的索引}} |
+| Event name | Event description | Value returned                                  |
+| ---------- | ----------------- | ----------------------------------------------- |
+| `tap`      | Tab is switched   | `{detail: {index: Index of the current click}}` |

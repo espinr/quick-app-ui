@@ -49,7 +49,7 @@
         src="{{rightBtn}}"
         class="icon"
       ></image>
-      <text if="rightBtn==='search'" class="search-btn">搜索</text>
+      <text if="rightBtn==='search'" class="search-btn">Search</text>
     </div>
   </div>
 </template>
@@ -71,7 +71,7 @@ export default {
       default: '', // search
     },
     placeholder: {
-      default: '搜索',
+      default: 'Search',
     },
     maxlength: {
       default: 50,

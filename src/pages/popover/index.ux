@@ -148,18 +148,18 @@ export default {
     return {
       contents: [
         {
-          content: '描述内容',
+          content: 'Description',
           iconPath: '/common/images/default_black.png',
         },
         {
-          content: '描述内容',
+          content: 'Description',
           icon: {
             type: 'category-fill',
             color: '#456FFF',
           },
         },
         {
-          content: '描述内容',
+          content: 'Description',
         },
       ],
       placementArr: [

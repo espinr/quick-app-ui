@@ -10,7 +10,10 @@
       onleft-btn-tap="leftBtn"
       onright-btn-tap="rightBtn"
     >
-      <span>内容详情可换行，不超过两行内容，也可以通过插入</span>
+      <span
+        >Content details can be wrapped in a maximum of two lines. You can also
+        insert the content into a new line</span
+      >
       <a class="text-link" href="/pages/button">文字链接</a>
       <span>更具有功能性的提示。</span>
     </q-page-result>
@@ -23,12 +26,12 @@ export default {
   data() {
     return {
       typeArr: ['success', 'warning', 'error', 'waiting'],
-      title: '主标题',
+      title: 'Main Title',
       description:
         '内容详情可换行，不超过两行内容。也可以通过插入文字链接更具有功能性的提示',
-      leftBtnName: '副按钮',
-      rightBtnName: '主按钮',
-      footerInfo: '底部自定义信息',
+      leftBtnName: 'Secondary Button',
+      rightBtnName: 'Home Button',
+      footerInfo: 'Bottom Custom Info',
     }
   },
   leftBtn(data) {
