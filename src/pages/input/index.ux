@@ -47,10 +47,10 @@ export default {
     console.log(detail)
   },
   blurHandler({ detail }) {
-    console.log('失去焦点！', detail)
+    console.log('Losing focus!', detail)
   },
   clearHandler({ detail }) {
-    console.log('清空输入！', detail)
+    console.log('Input cleared!', detail)
   },
   tapHandler({ detail }) {
     console.log(detail)

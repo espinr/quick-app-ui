@@ -7,7 +7,7 @@
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="11" current="{{1}}">
         <q-step title="Step #1" group-id="11"></q-step>
-        <q-step title="Step2状态说明" group-id="11"></q-step>
+        <q-step title="Step #2" group-id="11"></q-step>
         <q-step title="Step #3" group-id="11"></q-step>
       </q-steps>
     </div>
@@ -40,7 +40,7 @@
         <q-step
           title="Step #1"
           group-id="16"
-          content="Step Description```"
+          content="Step Description"
         ></q-step>
         <q-step
           title="Step #2"

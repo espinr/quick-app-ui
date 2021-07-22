@@ -28,11 +28,11 @@ export default {
       links: [
         {
           name: 'Bottom Link',
-          url: 'https://doc.quickapp.cn',
+          url: 'https://quick-app-initiative.ow2.io/',
         },
         {
           name: 'Bottom Link',
-          url: 'https://doc.quickapp.cn',
+          url: 'https://quick-app-initiative.ow2.io/',
         },
       ],
     }

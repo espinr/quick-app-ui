@@ -82,7 +82,7 @@ module.exports = {
         ],
       },
       {
-        title: 'Display Feeback',
+        title: 'Feedback Display',
         collapsable: false,
         children: [
           '/page-error',

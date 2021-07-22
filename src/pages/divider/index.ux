@@ -7,7 +7,7 @@
     <div class="space"></div>
     <q-divider content="No more data"></q-divider>
     <div class="space"></div>
-    <q-divider><text class="custom">Custom Styles内容</text></q-divider>
+    <q-divider><text class="custom">Custom Styles</text></q-divider>
   </div>
 </template>
 

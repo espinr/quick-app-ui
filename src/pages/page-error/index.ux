@@ -30,7 +30,7 @@ export default {
       ],
       leftBtnName: 'Back',
       rightBtnName: 'View',
-      description: '这是Description Text Description Text Description Text',
+      description: 'Description Text Description Text Description Text',
       footerBtnText: 'Bottom Text Button',
     }
   },

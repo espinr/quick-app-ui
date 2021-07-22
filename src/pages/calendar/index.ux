@@ -2,7 +2,9 @@
 <import name="q-button" src="../../components/button/index"></import>
 <template>
   <div class="qaui-wrap">
-    <q-button ontap="changeType" width="300">切换日历显示模式</q-button>
+    <q-button ontap="changeType" width="300"
+      >Toggle Calendar Display Mode</q-button
+    >
     <q-calendar
       if="type==='default'"
       type="default"
@@ -24,18 +26,18 @@ export default {
       desc: [
         {
           date: '2020-10-15',
-          top: 'Description Text',
-          bottom: 'Description Text',
+          top: 'Top Text',
+          bottom: 'Bottom Text',
         },
         {
           date: '2020-10-21',
-          top: 'Description Text',
-          bottom: 'Description Text',
+          top: 'Top Text',
+          bottom: 'Bottom Text',
         },
         {
           date: '2020-10-25',
-          top: 'Description Text',
-          bottom: 'Description Text',
+          top: 'Top Text',
+          bottom: 'Bottom Text',
         },
       ],
     }

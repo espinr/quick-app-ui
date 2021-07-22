@@ -13,7 +13,7 @@
     <q-container flex-direction="column">
       <div class="title">
         <image class="icon" src="/common/logo.png"></image>
-        <text>内部标题</text>
+        <text>Internal Title</text>
       </div>
       <div class="three">
         <text>Content</text>

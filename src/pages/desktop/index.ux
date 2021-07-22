@@ -22,7 +22,7 @@ export default {
   props: {},
   data() {
     return {
-      description: 'Add to Home Screen，Description Text描述',
+      description: 'Add to Home Screen text',
       background: '#fff',
       activeColor: '#456FFF',
       textColor: '#B2B2B2',
@@ -30,11 +30,11 @@ export default {
     }
   },
   handClose() {
-    console.log('关闭浮层回调')
+    console.log('Closing dialog callback')
   },
   handSuccess() {
     prompt.showToast({
-      message: '成功创建桌面图标',
+      message: 'The homescreen icon is successfully created.',
     })
   },
   handFail(evt) {
@@ -42,7 +42,7 @@ export default {
   },
   handCreated() {
     prompt.showToast({
-      message: '已创建桌面图标',
+      message: 'Homescreen icon created!',
     })
   },
 }

@@ -71,11 +71,11 @@ export default {
     })
   },
   onImagePreviewSuccess() {
-    console.log('图片预览成功')
+    console.log('The picture is previewed successfully')
   },
   videoAppear() {
     prompt.showToast({
-      message: '视频出现了',
+      message: 'The video was shown',
     })
   },
 }
