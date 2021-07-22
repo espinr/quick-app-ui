@@ -255,11 +255,11 @@ export default {
   },
 
   handleSelectBar(e) {
-    console.log('The selected items are:':, e.detail.barResult)
+    console.log('The selected items are:', e.detail.barResult)
   },
 
   handleSelectPopup(e) {
-    console.log('The selected items are:':, e.detail.popupResult)
+    console.log('The selected items are:', e.detail.popupResult)
   },
 }
 </script>

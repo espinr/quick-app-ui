@@ -71,9 +71,11 @@ export default {
   background-color: #ffffff;
   height: 48px * @ratio;
   padding: 0 20px * @ratio;
+  /*
   border-bottom-style: solid;
   border-bottom-width: 1px * @ratio;
   border-bottom-color: rgba(0, 0, 0, 0.08);
+  */
   .icon {
     height: 24px * @ratio;
     width: 24px * @ratio;

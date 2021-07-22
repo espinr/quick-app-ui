@@ -1,9 +1,13 @@
 <import name="my-icon" src="../../components/icon/index"></import>
 <template>
   <div class="qaui-wrap">
-    <list class="qaui-wrap-nav" index="{{ index }}">
+    <list class="qaui-wrap-nav" id="{{ index }}">
       <block for="{{ compData }}">
-        <list-item class="nav-item-{{ type }}" onclick="changeTab($idx)">
+        <list-item
+          class="nav-item-{{ type }}"
+          onclick="changeTab($idx)"
+          type="navItem"
+        >
           <div
             if="{{ type === 'default' }}"
             class="nav-item-left"
