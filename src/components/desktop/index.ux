@@ -29,7 +29,7 @@ export default {
   props: {
     description: {
       type: String,
-      default: '这里添加Description Text',
+      default: 'Description Text',
       required: true,
     },
     btnText: {

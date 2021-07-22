@@ -216,25 +216,25 @@ export default {
   data() {
     return {
       dataDefault1: [
-        { label: 'Label 1', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' },
+        { label: 'Label 1', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' },
       ],
       dataDefault2: [
-        { label: 'Label 1', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' },
-        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 1', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' },
+        { label: 'Label 3', describe: 'Descr. 3' },
       ],
       dataDefault3: [
-        { label: 'Label 1', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' },
-        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 1', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' },
+        { label: 'Label 3', describe: 'Descr. 3' },
         { label: 'Label 4', describe: 'Description 4' },
         { label: 'Label 5', describe: 'Description 5' },
       ],
       dataDefault4: [
-        { label: '滑动标签', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' },
-        { label: 'Label 3', describe: 'Description 3' },
+        { label: '滑动标签', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' },
+        { label: 'Label 3', describe: 'Descr. 3' },
         { label: 'Label 4', describe: 'Description 4' },
         { label: 'Label 5', describe: 'Description 5' },
       ],

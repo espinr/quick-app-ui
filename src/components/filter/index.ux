@@ -50,7 +50,7 @@
       >
         <text
           style="{{hasPopupResult ? 'color: #456FFF;':'color: rgba(0, 0, 0, 0.8);'}}"
-          >筛选</text
+          >Filter</text
         >
         <div class="filter-icon">
           <qu-icon
@@ -90,8 +90,8 @@
         </block>
       </div>
       <div class="btn-wrap" if="{{drawer.select === 'checkbox'}}">
-        <text class="reset" onclick="resetDrawerItem">重置</text>
-        <text class="commit" onclick="commitDrawer">确定</text>
+        <text class="reset" onclick="resetDrawerItem">Reset</text>
+        <text class="commit" onclick="commitDrawer">Set</text>
       </div>
     </div>
     <stack class="popup-wrap" if="{{showPopup}}">
@@ -109,7 +109,7 @@
                   <text
                     class="popup-item-title radio-text"
                     if="{{option.type === 'radio'}}"
-                    >单选</text
+                    >Select</text
                   >
                 </div>
                 <image
@@ -172,8 +172,8 @@
           </block>
         </list>
         <div class="btn-wrap" style="position: absolute; bottom: 0">
-          <text class="reset" onclick="resetPopupItem">重置</text>
-          <text class="commit" onclick="commitPopup">确定</text>
+          <text class="reset" onclick="resetPopupItem">Reset</text>
+          <text class="commit" onclick="commitPopup">Set</text>
         </div>
       </div>
     </stack>

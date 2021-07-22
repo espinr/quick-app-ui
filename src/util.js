@@ -1,6 +1,7 @@
 /**
- * 创建桌面图标
- * 注意：使用加载器测试`创建桌面快捷方式`功能时，请先在`系统设置`中打开`应用加载器`的`桌面快捷方式`权限
+ * Create desktop icons
+ * Note: When using the loader to test the `Create Desktop Shortcut` function, please first open the
+ * `Desktop Shortcut` permission of the `Application Loader` in the `System Settings`
  */
 function createShortcut() {
   const prompt = require('@system.prompt')
@@ -9,13 +10,13 @@ function createShortcut() {
     success: function (ret) {
       if (ret) {
         prompt.showToast({
-          message: '已创建桌面图标',
+          message: 'Homescreen icon created!',
         })
       } else {
         shortcut.install({
           success: function () {
             prompt.showToast({
-              message: '成功创建桌面图标',
+              message: 'Homescreen icon created',
             })
           },
           fail: function (errmsg, errcode) {

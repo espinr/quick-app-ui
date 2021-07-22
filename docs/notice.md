@@ -6,7 +6,7 @@ Notification bar within the quick app, which can be used for static and dynamic 
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/notice.gif" alt="barcode" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/notice.png" alt="toasts" style="width:300px" /></div>
 
 ### How to use it
 

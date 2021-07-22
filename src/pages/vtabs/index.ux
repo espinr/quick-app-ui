@@ -97,7 +97,7 @@ export default {
           icon: 'homepage',
           iconPath: '../../common/images/tabIcon.svg',
           selectedIconPath: '../../common/images/tabSelectIcon.svg',
-          text: '普通标签',
+          text: 'Home',
         },
         {
           icon: 'qrcode',

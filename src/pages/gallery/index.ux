@@ -12,12 +12,12 @@
       onimage-preview-success="onImagePreviewSuccess"
     ></q-gallery>
     <q-gallery
-      title="视频文件"
+      title="Video"
       video-orientation="landscape"
-      video-url="https://swsdl.vivo.com.cn/appstore/developer/uploadfile/20180323/20180323183010837.mp4"
+      video-url="/common/videos/samplevideo.mp4"
       onvideo-tap="clickItem"
       onvideo-appear="videoAppear"
-      poster-url="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png"
+      poster-url="/common/videos/screenshot-samplevideo.png"
     ></q-gallery>
   </div>
 </template>
@@ -29,38 +29,32 @@ export default {
   data() {
     return {
       data1: [
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
+        'https://images.unsplash.com/photo-1503485497530-06958022b017?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80',
       ],
       data2: [
-        'https://developer.huawei.com/images/quickApp-ide/banner_320-484.png',
+        'https://images.unsplash.com/photo-1466784828399-9a9921e8bdfd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       ],
       data3: [
-        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=134518335,1751359104&fm=26&gp=0.jpg',
+        'https://images.unsplash.com/photo-1471268762677-cb5179779bfe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       ],
       data4: [
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
+        'https://images.unsplash.com/photo-1490186969638-fe0c8aea80bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        'https://images.unsplash.com/photo-1495996278086-d589e29619ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        'https://images.unsplash.com/photo-1497431187953-886f6a75d2a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2184&q=80',
       ],
       data5: [
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603277817178&di=93757526f827b5ee7bdbcc033a29487b&imgtype=0&src=http%3A%2F%2Fwww.huaxia.com%2Fxw%2Fshgj%2Fimages%2F2018%2F06%2F12%2F2009996.png',
-        'https://imagestbook.cn/c9162600-17a7-11e9-8302-0d1daa9ceb5b',
+        'https://images.unsplash.com/photo-1486909995870-2dc533d7f9d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1435337417239-4bc87799056f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1487782310695-ed8583618566?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1490385131283-fbd735296f54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/uploads/1412455906842d646f1ce/7bf17d33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1464491965784-a12f0f70642b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1455058683937-c45857082982?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1482164565953-04b62dcac1cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80',
+        'https://images.unsplash.com/photo-1462470583607-1e62336830e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
       ],
     }
   },

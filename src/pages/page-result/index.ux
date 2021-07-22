@@ -29,7 +29,7 @@ export default {
       title: 'Main Title',
       description:
         'The content details can be wrapped in a maximum of two lines. You can also insert text links for more functional tips.',
-      leftBtnName: 'Secondary Button',
+      leftBtnName: 'Other Button',
       rightBtnName: 'Home Button',
       footerInfo: 'Bottom Custom Info',
     }

@@ -6,7 +6,7 @@ Displays the page title.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/titlebar.jpg" alt="barcode" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/titlebar.png" alt="Title bar sample" style="width:300px" /></div>
 
 ### How to use it
 

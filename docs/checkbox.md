@@ -6,7 +6,7 @@ Allows users to select multiple items in a form.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/checkbox.jpg" alt="barcode" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/checkbox.png" alt="checkboxes" style="width:300px" /></div>
 
 ### How to use it
 

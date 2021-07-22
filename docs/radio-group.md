@@ -6,7 +6,7 @@ It is used to group radio buttons in the form, and provides multiple operation m
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/radio.jpg" alt="barcode" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/radio.png" alt="Radio buttons" style="width:300px" /></div>
 
 ### How to use it
 

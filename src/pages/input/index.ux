@@ -20,12 +20,8 @@
       icon-right-a="/common/logo.png"
     ></q-input>
     <q-input type="border"></q-input>
-    <q-input type="border" value="Add Content" button="Submit"></q-input>
-    <q-input
-      icon-left="/common/logo.png"
-      type="border"
-      button="Submit"
-    ></q-input>
+    <q-input type="border" value="Add Content" button="Add"></q-input>
+    <q-input icon-left="/common/logo.png" type="border" button="Add"></q-input>
     <q-input
       icon-left="/common/logo.png"
       type="border"
@@ -36,7 +32,7 @@
       icon-left="/common/logo.png"
       type="border"
       icon-right-a="/common/logo.png"
-      button="Submit"
+      button="Add"
     ></q-input>
   </div>
 </template>

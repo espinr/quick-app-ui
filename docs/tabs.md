@@ -7,9 +7,7 @@ Tabs (in the same row) to switch actions and access different pages.
 ### Usage result
 
 <div style="text-align: center;margin: 40px;">
-    <img src="./assets/tabs-a.png" alt="tabs" style="width:300px" />
-    <img src="./assets/tabs-b.png" alt="tabs" style="width:300px" />
-    <img src="./assets/tabs-c.png" alt="tabs" style="width:300px" />
+    <img src="./assets/tabs.png" alt="tabs" style="width:300px" />
 </div>
 
 ### How to use it
@@ -245,21 +243,21 @@ export default {
   data() {
     return {
       dataDefault1: [
-        { label: 'Label 1', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' }],
+        { label: 'Label 1', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' }],
       dataDefault2: [
-        { label: 'Label 1', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' },
-        { label: 'Label 3', describe: 'Description 3' }],
+        { label: 'Label 1', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' },
+        { label: 'Label 3', describe: 'Descr. 3' }],
       dataDefault3: [
-        { label: 'Label 1', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' },
-        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 1', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' },
+        { label: 'Label 3', describe: 'Descr. 3' },
         { label: 'Label 4', describe: 'Description 4' }],
       dataDefault4: [
-        { label: 'Label 1', describe: 'Description 1' },
-        { label: 'Label 2', describe: 'Description 2' },
-        { label: 'Label 3', describe: 'Description 3' },
+        { label: 'Label 1', describe: 'Descr. 1' },
+        { label: 'Label 2', describe: 'Descr. 2' },
+        { label: 'Label 3', describe: 'Descr. 3' },
         { label: 'Label 4', describe: 'Description 4' },
         { label: 'Label 5', describe: 'Description 5' }],
       tabbarData: [

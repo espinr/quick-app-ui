@@ -25,7 +25,7 @@ npm install less less-loader --save-dev
 The component library designWidth is developed based on 360-degree. To adapt to different designWidths, you need to modify the @ratio variable in the `qaui/src/components/common.less` file.
 
 The default @ratio value of the current component library is 750/360. If the designWidth value of your app is 360, change @ratio to 360/360.
-::
+:::
 
 ### Feedback Communication
 

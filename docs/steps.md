@@ -6,7 +6,7 @@ Shows the progress in a process with different stages.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/steps.jpg" alt="barcode" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/steps.png" alt="Several step bars" style="width:300px" /></div>
 
 ### How to use it
 

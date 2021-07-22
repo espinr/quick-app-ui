@@ -10,7 +10,7 @@
           onclick="previous"
         ></q-icon>
         <text class="message"
-          >{{ calendar[0].year }}年{{ calendar[0].month }}月</text
+          >{{ calendar[0].month }}-{{ calendar[0].year }}</text
         >
         <q-icon
           type="forward-arrow"
@@ -23,13 +23,13 @@
         class="weekday"
         style="background-color: {{type==='list'?'#F2F2F2':'#ffffff'}};"
       >
-        <text>日</text>
-        <text>一</text>
-        <text>二</text>
-        <text>三</text>
-        <text>四</text>
-        <text>五</text>
-        <text>六</text>
+        <text>S</text>
+        <text>M</text>
+        <text>T</text>
+        <text>W</text>
+        <text>T</text>
+        <text>F</text>
+        <text>S</text>
       </div>
       <div class="calendar-data">
         <list class="outer-list {{type==='list'?'list-height':''}}">
@@ -39,7 +39,7 @@
             type="month"
           >
             <text class="date" if="type==='list'">
-              {{ monthItem.year }}年{{ monthItem.month }}月
+              {{ monthItem.month }}-{{ monthItem.year }}
             </text>
             <div class="inner-list">
               <!--下面在style中判断颜色状态实属无奈，用类名控制会出现样式不生效的情况-->

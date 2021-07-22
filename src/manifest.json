@@ -1,9 +1,9 @@
 {
   "package": "com.qaui.sample",
-  "name": "QaUI组件库",
+  "name": "Quick App UI Components",
   "versionName": "1.0.0",
-  "versionCode": "1",
-  "minPlatformVersion": "1060",
+  "versionCode": 1,
+  "minPlatformVersion": 1060,
   "icon": "/common/logo.png",
   "features": [
     { "name": "system.prompt" },
@@ -123,131 +123,131 @@
     "menu": true,
     "pages": {
       "pages/home": {
-        "titleBarText": "QaUI组件库",
+        "titleBarText": "Quick App UI Components",
         "menu": false
       },
       "pages/button": {
-        "titleBarText": "按钮 button",
+        "titleBarText": "button",
         "menu": false
       },
       "pages/container": {
-        "titleBarText": "容器 container",
+        "titleBarText": "container",
         "menu": false
       },
       "pages/titlebar": {
-        "titleBarText": "标题栏 titlebar",
+        "titleBarText": "titlebar (title bar)",
         "menu": false
       },
       "pages/searchbar": {
-        "titleBarText": "搜索栏 searchbar",
+        "titleBarText": "searchbar (search bar)",
         "menu": false
       },
       "pages/title": {
-        "titleBarText": "模块标题 title",
+        "titleBarText": "title (heading)",
         "menu": false
       },
       "pages/divider": {
-        "titleBarText": "分隔符 divider",
+        "titleBarText": "divider (separator)",
         "menu": false
       },
       "pages/footer": {
-        "titleBarText": "页脚 footer",
+        "titleBarText": "footer",
         "menu": false
       },
       "pages/icon": {
-        "titleBarText": "图标 icon",
+        "titleBarText": "icon",
         "menu": false
       },
       "pages/progress": {
-        "titleBarText": "进度条 progress",
+        "titleBarText": "progress (progress bar)",
         "menu": false
       },
       "pages/page-result": {
-        "titleBarText": "结果页 pageResult",
+        "titleBarText": "pageResult (result page)",
         "menu": false
       },
       "pages/page-error": {
-        "titleBarText": "异常页 pageError",
+        "titleBarText": "pageError (error page)",
         "menu": false
       },
       "pages/notice": {
-        "titleBarText": "通告栏 notice",
+        "titleBarText": "notice (toast)",
         "menu": false
       },
       "pages/popover": {
-        "titleBarText": "气泡菜单 popover",
+        "titleBarText": "popover",
         "menu": false
       },
       "pages/radio": {
-        "titleBarText": "单选按钮 radio",
+        "titleBarText": "radio (radio button)",
         "menu": false
       },
       "pages/textarea": {
-        "titleBarText": "多行输入框 textarea",
+        "titleBarText": "textarea (Textbox)",
         "menu": false
       },
       "pages/checkbox": {
-        "titleBarText": "多选按钮 checkbox",
+        "titleBarText": "checkbox",
         "menu": false
       },
       "pages/input": {
-        "titleBarText": "输入框 input",
+        "titleBarText": "input (text input)",
         "menu": false
       },
       "pages/filter": {
-        "titleBarText": "筛选栏 filter",
+        "titleBarText": "filter (filter bar)",
         "menu": false
       },
       "pages/switch": {
-        "titleBarText": "单选开关 switch",
+        "titleBarText": "switch (switch checkbox)",
         "menu": false
       },
       "pages/alphabet": {
-        "titleBarText": "字母索引表 alphabet",
+        "titleBarText": "alphabet (index)",
         "menu": false
       },
       "pages/steps": {
-        "titleBarText": "步骤条 steps",
+        "titleBarText": "steps (steps bar)",
         "menu": false
       },
       "pages/tabbar": {
-        "titleBarText": "底部导航 tabbar",
+        "titleBarText": "tabbar (navigation bar)",
         "menu": false
       },
       "pages/list": {
-        "titleBarText": "列表 list",
+        "titleBarText": "list (item list)",
         "menu": false
       },
       "pages/collapse-group": {
-        "titleBarText": "折叠版 collapse",
+        "titleBarText": "collapse (accordion)",
         "menu": false
       },
       "pages/gallery": {
-        "titleBarText": "画廊 gallery",
+        "titleBarText": "gallery",
         "menu": false
       },
       "pages/slider": {
-        "titleBarText": "滑动条 slider",
+        "titleBarText": "slider (slider bar)",
         "menu": false
       },
       "pages/vcode": {
-        "titleBarText": "验证码 vcode",
+        "titleBarText": "vcode (CAPTCHA)",
         "menu": false
       },
       "pages/calendar": {
-        "titleBarText": "日历 calendar",
+        "titleBarText": "calendar",
         "menu": false
       },
       "pages/desktop": {
-        "titleBarText": "添桌浮层 desktop",
+        "titleBarText": "desktop (home screen bookmark)",
         "menu": false
       },
       "pages/tabs": {
-        "titleBarText": "tabs横向选项卡",
+        "titleBarText": "tabs (horizontal tabs)",
         "menu": false
       },
       "pages/vtabs": {
-        "titleBarText": "vtabs纵向选项卡",
+        "titleBarText": "vtabs (vertical tabs)",
         "menu": false
       }
     }

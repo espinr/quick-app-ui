@@ -58,7 +58,7 @@
       </q-collapse-group>
     </div>
     <div style="margin-top: 20px">
-      <q-collapse-group title="禁用示例" id="3" accordion="{{true}}">
+      <q-collapse-group title="Disabled" id="3" accordion="{{true}}">
         <q-collapse
           title="Title Text1"
           content="Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1"

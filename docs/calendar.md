@@ -7,8 +7,7 @@ Component to view and select dates.
 ### Usage result
 
 <div style="text-align: center;margin: 40px;">
-    <img src="./assets/calendar-a.jpg" alt="barcode" style="width:300px" />
-    <img src="./assets/calendar-b.jpg" alt="barcode" style="width:300px" />
+    <img src="./assets/calendar.png" alt="calendar" style="width:300px" />
 </div>
 
 ### How to use it

@@ -13,66 +13,34 @@
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="12" current="{{1}}">
-        <q-step
-          title="Step #1"
-          group-id="12"
-          content="Step Description"
-        ></q-step>
-        <q-step
-          title="Step #2"
-          content="Step Description"
-          group-id="12"
-        ></q-step>
-        <q-step
-          title="Step #3"
-          content="Step Description"
-          group-id="12"
-        ></q-step>
-        <q-step
-          title="Step #4"
-          content="Step Description"
-          group-id="12"
-        ></q-step>
+        <q-step title="Step #1" group-id="12" content="Descr. 1"></q-step>
+        <q-step title="Step #2" content="Descr. 2" group-id="12"></q-step>
+        <q-step title="Step #3" content="Descr. 3" group-id="12"></q-step>
+        <q-step title="Step #4" content="Description 4" group-id="12"></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="16" current="{{1}}" has-icon="{{true}}">
-        <q-step
-          title="Step #1"
-          group-id="16"
-          content="Step Description"
-        ></q-step>
+        <q-step title="Step #1" group-id="16" content="Descr. 1"></q-step>
         <q-step
           title="Step #2"
           group-id="16"
-          content="Step Description"
+          content="Descr. 2"
           status="error"
         ></q-step>
-        <q-step
-          title="Step #3"
-          group-id="16"
-          content="Step Description"
-        ></q-step>
+        <q-step title="Step #3" group-id="16" content="Descr. 3"></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
       <q-steps direction="row" id="17" current="{{1}}" has-text="{{true}}">
-        <q-step
-          title="Step #1"
-          group-id="17"
-          content="Step Description"
-        ></q-step>
+        <q-step title="Step #1" group-id="17" content="Descr. 1"></q-step>
         <q-step
           title="Step #2"
           group-id="17"
-          content="Step Description"
+          content="Descr. 2"
           status="error"
         ></q-step>
-        <q-step
-          title="Step #3"
-          group-id="17"
-          content="Step Description"
-        ></q-step>
+        <q-step title="Step #3" group-id="17" content="Descr. 3"></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-wrapper">
@@ -84,7 +52,7 @@
         ></q-step>
         <q-step
           title="Step #2"
-          content="Step Description"
+          content="Descr. 2"
           group-id="13"
           status="error"
         ></q-step>
@@ -170,26 +138,14 @@
           content="Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description Step Description"
           group-id="15"
         ></q-step>
-        <q-step
-          title="Step #2"
-          content="Step Description"
-          group-id="15"
-        ></q-step>
-        <q-step
-          title="Step #3"
-          content="Step 3 Description"
-          group-id="15"
-        ></q-step>
-        <q-step
-          title="Step #4"
-          content="Step 4 Description"
-          group-id="15"
-        ></q-step>
+        <q-step title="Step #2" content="Descr. 2" group-id="15"></q-step>
+        <q-step title="Step #3" content="Descr. 3" group-id="15"></q-step>
+        <q-step title="Step #4" content="Description 4" group-id="15"></q-step>
       </q-steps>
     </div>
     <div class="qaui-steps-button">
       <q-button class="button" type="ghost" ontap="changeStatus"
-        >Next Step</q-button
+        ><span>Next Step</span></q-button
       >
     </div>
   </div>

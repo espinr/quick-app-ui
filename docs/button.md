@@ -6,7 +6,7 @@ Basic component for buttons.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/button.jpg" alt="barcode" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/button.png" alt="buttons" style="width:300px" /></div>
 
 ### How to use it
 

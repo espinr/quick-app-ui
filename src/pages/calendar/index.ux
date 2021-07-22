@@ -3,7 +3,7 @@
 <template>
   <div class="qaui-wrap">
     <q-button ontap="changeType" width="300"
-      >Toggle Calendar Display Mode</q-button
+      ><span>Toggle Display Mode</span></q-button
     >
     <q-calendar
       if="type==='default'"

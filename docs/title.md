@@ -6,7 +6,7 @@ It is used to display headings at different levels.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/title.jpg" alt="barcode" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/title.png" alt="Headings" style="width:300px" /></div>
 
 ### How to use it
 
