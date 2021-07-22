@@ -3,7 +3,7 @@
   <div class="qui-wrap">
     <div class="inline">
       <q-button class="button" type="primary" size="small" width="70"
-        >#1</q-button
+        ><span>#1</span></q-button
       >
       <q-button
         class="button"
@@ -11,12 +11,12 @@
         size="small"
         disabled="{{true}}"
         width="70"
-        >#2</q-button
+        ><span>#2</span></q-button
       >
     </div>
     <div class="inline">
       <q-button class="button" type="ghost" size="small" width="70"
-        >#2</q-button
+        ><span>#3</span></q-button
       >
       <q-button
         class="button"
@@ -24,37 +24,43 @@
         size="small"
         disabled="{{true}}"
         width="70"
-        >#4</q-button
+        ><span>#4</span></q-button
       >
     </div>
-    <q-button class="button" width="300" type="primary">Primary</q-button>
+    <q-button class="button" width="300" type="primary"
+      ><span>Primary</span></q-button
+    >
     <q-button class="button" width="300" type="primary" disabled="{{true}}"
-      >Primary disabled</q-button
+      ><span>Primary disabled</span></q-button
     >
     <q-button class="button" width="300" type="primary" loading="{{true}}"
-      >Primary loading</q-button
+      ><span>Primary loading</span></q-button
     >
 
-    <q-button class="button" width="300" type="ghost">Ghost</q-button>
+    <q-button class="button" width="300" type="ghost"
+      ><span>Ghost</span></q-button
+    >
     <q-button
       class="button"
       width="300"
       type="ghost"
       color="orange"
       loading="{{true}}"
-      >Custom color</q-button
+      ><span>Custom color</span></q-button
     >
     <q-button class="button" width="300" type="ghost" disabled="{{true}}"
-      >Ghost disabled</q-button
+      ><span>Ghost disabled</span></q-button
     >
 
-    <q-button class="button" width="300" type="error">Error</q-button>
+    <q-button class="button" width="300" type="error"
+      ><span>Error</span></q-button
+    >
     <q-button class="button" width="300" type="error" disabled="{{true}}"
-      >Error disabled</q-button
+      ><span>Error disabled</span></q-button
     >
 
     <q-button class="button" width="300" bg-color="orange" color="#000"
-      >Custom color</q-button
+      ><span>Custom color</span></q-button
     >
     <q-button
       class="button"
@@ -64,7 +70,7 @@
       bg-color="orange"
       color="#000"
       disabled="{{true}}"
-      >Customized</q-button
+      ><span>Customized</span></q-button
     >
   </div>
 </template>
