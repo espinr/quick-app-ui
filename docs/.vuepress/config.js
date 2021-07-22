@@ -25,18 +25,6 @@ module.exports = {
         content: 'Quick App Official UI component library development',
       },
     ],
-    [
-      'script',
-      {
-        async: '',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-GNKRB7QBLL',
-      },
-    ],
-    [
-      'script',
-      {},
-      'function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-GNKRB7QBLL");',
-    ],
   ],
   markdown: {
     lineNumbers: true,

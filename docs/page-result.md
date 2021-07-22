@@ -6,7 +6,7 @@ Displays the results of specific running tasks.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/page-result.png" alt="page with result" style="width:300px" /></div>
+<div style="text-align: center;margin: 40px;"><img src="./assets/pageresult.png" alt="page with result" style="width:300px" /></div>
 
 ### How to use it
 
