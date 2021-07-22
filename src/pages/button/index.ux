@@ -3,7 +3,7 @@
   <div class="qui-wrap">
     <div class="inline">
       <q-button class="button" type="primary" size="small" width="70"
-        >Primary</q-button
+        ><span>Primary</span></q-button
       >
       <q-button
         class="button"
