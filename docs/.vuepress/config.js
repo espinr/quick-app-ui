@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Quick App UI Components',
-  base: '/qaui/',
+  base: '/quick-app-ui/',
   description:
     'Quick App UI is the official library of components of the Quick App Alliance, localized into English',
   plugins: [
