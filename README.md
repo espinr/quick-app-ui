@@ -1,11 +1,11 @@
 # Quick App Component Library Project
 
-Quick App official component library project localization into English. Click [Component Library Document](https://quickappcn.github.io/qaui).
+Quick App official component library project localization into English.
 
 ## Component Preview
 
 Use the browser or the Quick Application Debugger (Android App) to scan the code and preview the component.
-![Component library QR code](https://quickappcn.github.io/qaui/assets/img/qrcode.08ad4afd.png)
+![Component library QR code](./docs/assets/qrcode.png)
 
 ## Usage
 
