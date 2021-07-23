@@ -6,7 +6,9 @@ Notification bar within the quick app, which can be used for static and dynamic 
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/notice.png" alt="toasts" style="width:300px" /></div>
+<!-- div style="text-align: center;margin: 40px;"><img src="./assets/notice.png" alt="toasts" style="width:300px" /></div -->
+
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/notice/"/>
 
 ### How to use it
 

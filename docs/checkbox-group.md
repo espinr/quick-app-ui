@@ -6,7 +6,9 @@ It is used to group multiple selection boxes in the form, and provides multiple 
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/checkbox.png" alt="checkbox" style="width:300px" /></div>
+<!-- div style="text-align: center;margin: 40px;"><img src="./assets/checkbox.png" alt="checkbox" style="width:300px" /></div -->
+
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/checkbox"/>
 
 ### How to use it
 

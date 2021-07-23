@@ -6,7 +6,9 @@ Displays the page title.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/titlebar.png" alt="Title bar sample" style="width:300px" /></div>
+<!-- div style="text-align: center;margin: 40px;"><img src="./assets/titlebar.png" alt="Title bar sample" style="width:300px" /></div -->
+
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/titlebar/"/>
 
 ### How to use it
 

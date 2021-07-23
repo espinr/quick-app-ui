@@ -176,10 +176,10 @@ export default {
         'bottom',
         'bottomRight',
       ],
-      popoverWidth: 95,
+      popoverWidth: 150,
       triggerSize: [84, 33],
       offset: [0, 0],
-      arrowSpace: 10,
+      arrowSpace: 5,
     }
   },
   handleClick(data) {

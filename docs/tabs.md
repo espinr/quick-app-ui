@@ -6,9 +6,11 @@ Tabs (in the same row) to switch actions and access different pages.
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;">
+<!-- div style="text-align: center;margin: 40px;">
     <img src="./assets/tabs.png" alt="tabs" style="width:300px" />
-</div>
+</div -->
+
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/tabs/"/>
 
 ### How to use it
 
