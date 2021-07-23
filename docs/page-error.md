@@ -6,7 +6,9 @@ This page is used to display and report unusual behavior of the system and excep
 
 ### Usage result
 
-<div style="text-align: center;margin: 40px;"><img src="./assets/pageerror.png" alt="error page" style="width:300px" /></div>
+<!-- div style="text-align: center;margin: 40px;"><img src="./assets/pageerror.png" alt="error page" style="width:300px" /></div -->
+
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/page-error/"/>
 
 ### How to use it
 
