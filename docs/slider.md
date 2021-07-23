@@ -6,7 +6,7 @@ Component to select a specific value within a range of values.
 
 ### Usage result
 
-<preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/slider"/>
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/slider"/>
 
 ### How to use it
 

@@ -6,7 +6,7 @@ Dialog to add a bookmark on the home screen (desktop).
 
 ### Usage result
 
-<preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/desktop"/>
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/desktop"/>
 
 ### How to use it
 

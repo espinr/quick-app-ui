@@ -6,7 +6,7 @@ Expands and collapse panels. The accordion is a special folding panel that allow
 
 ### Usage result
 
-<preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/collapse-group/"/>
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/collapse-group/"/>
 
 ### How to use it
 

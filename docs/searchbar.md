@@ -6,7 +6,7 @@ The component used for searching content.
 
 ### Usage result
 
-<preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/searchbar"/>
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/searchbar"/>
 
 ### How to use it
 

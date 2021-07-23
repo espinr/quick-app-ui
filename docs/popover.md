@@ -6,7 +6,7 @@ Click the element to pop up a bubble menu.
 
 ### Usage result
 
-<preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/popover/"/>
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/popover/"/>
 
 ### How to use it
 

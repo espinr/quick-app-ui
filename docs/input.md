@@ -6,7 +6,7 @@ This component is used for text input.
 
 ### Usage result
 
-<preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/input"/>
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/input"/>
 
 ### How to use it
 

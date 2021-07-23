@@ -6,7 +6,7 @@ Displays text, images, and paragraphs in a list.
 
 ### Usage result
 
-<preview url="https://editor.quickapp.cn/preview/2011/sL/2011sL1yEg08/build/pages/list/"/>
+<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/list/"/>
 
 ### How to use it
 
