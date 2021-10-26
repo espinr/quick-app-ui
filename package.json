@@ -9,9 +9,6 @@
     "doc": "docs"
   },
   "scripts": {
-    "pre-install": "cd /app",
-    "prestart": "ls && cd /app",
-    "start": "hap build && hap server --watch",
     "build": "hap build",
     "release": "hap release",
     "server": "hap server --watch",
