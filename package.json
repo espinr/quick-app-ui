@@ -18,9 +18,6 @@
     "lint:fix": "eslint --ext .js,.ux src --fix",
     "pretty": "prettier --write */**/*.ux"
   },
-  "engines": {
-    "node": "14.x"
-  },
   "license": "MIT",
   "husky": {
     "hooks": {
@@ -42,19 +39,16 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-hybrid": "0.0.5",
+    "hap-toolkit": "^0.6.8",
     "husky": "^4.3.0",
+    "less": "^3.13.1",
+    "less-loader": "^7.3.0",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
     "prettier-plugin-quickapp": "^0.1.0",
     "vuepress": "^1.5.4"
   },
   "dependencies": {
-    "fs": "^0.0.2",
-    "path": "^0.12.7",
-    "less": "^4.1.1",
-    "less-loader": "^10.0.1",
-    "schema-utils": "3.1.1",
-    "hap-toolkit": "^1.9.5",
     "clipboard": "^2.0.6",
     "vuepress-plugin-feedback": "^1.2.0"
   },
