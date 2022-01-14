@@ -56,7 +56,6 @@
     "path": "^0.12.7",
     "less": "^4.1.1",
     "webpack": "^4.45.0",
-    "less-loader": "^10.0.1",
     "node-sass": "^7.0.1",
     "vue-loader": "^15.9.8",
     "highlight.js": "^11.4.0",
