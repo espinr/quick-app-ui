@@ -56,8 +56,6 @@
     "path": "^0.12.7",
     "less": "^4.1.1",
     "webpack": "^4.45.0",
-    "node-sass": "^7.0.1",
-    "vue-loader": "^15.9.8",
     "highlight.js": "^11.4.0",
     "schema-utils": "3.1.1",
     "hap-toolkit": "^1.9.8",
