@@ -8,7 +8,7 @@ Used to allow users to select a single item of information in a form.
 
 <!--div style="text-align: center;margin: 40px;"><img src="./assets/radio.png" alt="Radio buttons" style="width:300px" /></div-->
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/radio/"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/radio/"/>
 
 ### How to use it
 

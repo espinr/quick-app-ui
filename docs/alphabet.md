@@ -6,7 +6,7 @@ Alphabet index.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/alphabet"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/alphabet"/>
 
 ### How to use it
 

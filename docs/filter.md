@@ -6,7 +6,7 @@ Component used to filter data.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/filter"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/filter"/>
 
 ### How to use it
 

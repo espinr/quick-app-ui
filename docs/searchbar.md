@@ -6,7 +6,7 @@ The component used for searching content.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/searchbar"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/searchbar"/>
 
 ### How to use it
 

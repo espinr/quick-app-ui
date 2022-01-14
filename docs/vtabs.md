@@ -6,7 +6,7 @@ Tabs oriented vertically to switch actions and access different pages.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/vtabs"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/vtabs"/>
 
 ### How to use it
 

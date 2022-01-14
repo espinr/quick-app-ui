@@ -6,7 +6,7 @@ Component used to separate different components and dialogs.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/divider"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/divider"/>
 
 ### How to use it
 

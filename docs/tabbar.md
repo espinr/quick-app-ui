@@ -6,7 +6,7 @@ Tab switch at the bottom of the screen.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/tabbar"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/tabbar"/>
 
 ### How to use it
 

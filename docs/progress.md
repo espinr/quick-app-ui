@@ -6,7 +6,7 @@ Displays a progress bar and informs users of the loading current status.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/progress/"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/progress/"/>
 
 ### How to use it
 

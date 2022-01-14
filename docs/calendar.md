@@ -10,7 +10,7 @@ Component to view and select dates.
     <img src="./assets/calendar.png" alt="calendar" style="width:300px" />
 </div-->
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/calendar"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/calendar"/>
 
 ### How to use it
 

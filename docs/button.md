@@ -8,7 +8,7 @@ Basic component for buttons.
 
 <!--div style="text-align: center;margin: 40px;"><img src="./assets/button.png" alt="buttons" style="width:300px" /></div -->
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/button"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/button"/>
 
 ### How to use it
 

@@ -6,7 +6,7 @@ Multi-line text box, which is used to enter multiple of text.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/textarea"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/textarea"/>
 
 ### How to use it
 

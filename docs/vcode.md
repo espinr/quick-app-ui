@@ -6,7 +6,7 @@ Component used to process verification codes (CAPTCHA).
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/vcode"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/vcode"/>
 
 ### How to use it
 

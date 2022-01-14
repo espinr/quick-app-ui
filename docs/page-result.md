@@ -8,7 +8,7 @@ Displays the results of specific running tasks.
 
 <!-- div style="text-align: center;margin: 40px;"><img src="./assets/pageresult.png" alt="page with result" style="width:300px" /></div -->
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/page-result/"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/page-result/"/>
 
 ### How to use it
 

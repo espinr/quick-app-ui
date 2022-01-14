@@ -6,7 +6,7 @@ On/off button used to switch between two states.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/switch"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/switch"/>
 
 ### How to use it
 

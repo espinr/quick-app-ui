@@ -6,7 +6,7 @@ The basic layout component used to contain several components.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/container"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/container"/>
 
 ### How to use it
 

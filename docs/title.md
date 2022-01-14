@@ -8,7 +8,7 @@ It is used to display headings at different levels.
 
 <!-- div style="text-align: center;margin: 40px;"><img src="./assets/title.png" alt="Headings" style="width:300px" /></div -->
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/title/"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/title/"/>
 
 ### How to use it
 

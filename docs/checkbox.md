@@ -8,7 +8,7 @@ Allows users to select multiple items in a form.
 
 <!--div style="text-align: center;margin: 40px;"><img src="./assets/checkbox.png" alt="checkboxes" style="width:300px" /></div-->
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/checkbox"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/checkbox"/>
 
 ### How to use it
 

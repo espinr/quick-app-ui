@@ -6,7 +6,7 @@ Displays footer information.
 
 ### Usage result
 
-<preview url="https://wonderful-harsh-alvarezsaurus.glitch.me/preview/pages/footer"/>
+<preview url="https://quick-app-ui.glitch.me/preview/pages/footer"/>
 
 ### How to use it
 
